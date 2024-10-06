@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="co.edu.uco.ucobet.generales.init.domain.country.CountryDomain"/>
+    <fullyQualifiedTypeName name="co.edu.uco.ucobet.generales.init.domain.Domain"/>
+    <fullyQualifiedTypeName name="co.edu.uco.ucobet.generales.init.domain.state.StateDomain"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="co.edu.uco.ucobet.generales.domain.DomainRule"/>
+    <fullyQualifiedTypeName name="co.edu.uco.ucobet.generales.domain.state.StateDomain"/>
+    <fullyQualifiedTypeName name="co.edu.uco.ucobet.generales.domain.city.CityDomain"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+</qualifiedTypeNameHistroy>

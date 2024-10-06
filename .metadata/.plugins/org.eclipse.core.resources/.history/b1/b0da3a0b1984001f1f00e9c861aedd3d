@@ -1,0 +1,8 @@
+package co.edu.uco.ucobet.generales.init.domain.city.rules;
+
+public class Snippet {
+	public static void main(String[] args) {
+		CityNameFormatIsValidRule
+	}
+}
+
