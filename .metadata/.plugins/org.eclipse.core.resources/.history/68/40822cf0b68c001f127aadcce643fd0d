@@ -1,0 +1,28 @@
+package co.edu.uco.ucobet.generales.infrastructure.secondaryadapters.data.sql.repository;
+
+import java.util.List;
+
+import co.edu.uco.ucobet.generales.application.secondaryports.entity.CityEntity;
+import co.edu.uco.ucobet.generales.application.secondaryports.repository.CityRepositoryCustom;
+import jakarta.persistence.EntityManager;
+
+public final class CityRepositoryCustomImpl implements CityRepositoryCustom{
+	
+	private EntityManager	entityManager;
+	
+	public CityRepositoryCustomImpl(final EntityManager entityManager) {
+		this.entityManager = entityManager;
+	}
+
+	@Override
+	public List<CityEntity> findByFilter(final CityEntity filter) {
+		try {
+			var criteriaBuilder = entityManager.getCriteriaBuilder();
+			var query = criteriaBuilder.createQuery(CityEntity.class);
+			
+		} catch (final Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

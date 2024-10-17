@@ -1,0 +1,15 @@
+package co.edu.uco.ucobet.generales.crosscutting.exceptions;
+
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.enums.Layer;
+
+public class RuleUcobetException extends UcobetException {
+	
+	private static final long serialVersionUID = 1L;
+
+
+	public RuleUcobetException(String userMessage, String TechnicalMessage, Exception rootException, Layer layer) {
+		super(userMessage, TechnicalMessage, rootException, layer);
+		// TODO Auto-generated constructor stub
+	}
+
+}

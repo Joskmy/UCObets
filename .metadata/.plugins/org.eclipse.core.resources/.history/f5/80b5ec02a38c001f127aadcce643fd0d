@@ -1,0 +1,15 @@
+package co.edu.uco.ucobet.generales.application.secondaryports.entity;
+
+import java.util.UUID;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Country")
+
+public final class CountryEntity {
+	private UUID id;
+	private String name;
+
+}
