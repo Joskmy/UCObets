@@ -1,7 +1,17 @@
 package co.edu.uco.ucobet.generales.domain.city.exceptions;
 
-public class CityIsBeingUsedException extends RuntimeException {
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.RuleUcobetException;
 
-	private static final long serialVersionUID = 1L;
+public class CityIsBeingUsedException extends RuleUcobetException {
 
+    private static final long serialVersionUID = 1L;
+
+    private CityIsBeingUsedException(final String userMessage) {
+        super(userMessage, userMessage, new Exception());
+    }
+
+    public static CityIsBeingUsedException create() {
+        var userMessage = "La ciudad está en uso...";
+        return new CityIsBeingUsedException(userMessage);
+    }
 }

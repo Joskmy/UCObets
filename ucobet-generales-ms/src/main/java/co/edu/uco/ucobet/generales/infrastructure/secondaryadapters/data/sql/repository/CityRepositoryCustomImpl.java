@@ -2,6 +2,7 @@ package co.edu.uco.ucobet.generales.infrastructure.secondaryadapters.data.sql.re
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import co.edu.uco.ucobet.generales.application.secondaryports.entity.CityEntity;
 import co.edu.uco.ucobet.generales.application.secondaryports.repository.CityRepositoryCustom;
@@ -42,13 +43,38 @@ public final class CityRepositoryCustomImpl implements CityRepositoryCustom {
 					predicates.add(criteriaBuilder.equal(result.get("state"), filter.getState()));
 				}
 			}
-			
+
 			query.select(result).where(criteriaBuilder.and(predicates.toArray(new Predicate[0])));
 			return entityManager.createQuery(query).getResultList();
-			
+
 		} catch (final Exception exception) {
 			throw RepositoryUcobetException.create(null, null, exception);
 		}
 	}
 
+	@Override
+	public boolean isCityUsed(final UUID cityId) {
+		try {
+			var criteriaBuilder = entityManager.getCriteriaBuilder();
+			var query = criteriaBuilder.createQuery(Long.class);
+			var result = query.from(CityEntity.class);
+
+			var predicates = new ArrayList<>();
+
+			if (!UUIDHelper.isDefault(cityId)) {
+				predicates.add(criteriaBuilder.equal(result.get("city").get("id"), cityId));
+			}
+
+			query.select(criteriaBuilder.count(result))
+					.where(criteriaBuilder.and(predicates.toArray(new Predicate[0])));
+
+			Long count = entityManager.createQuery(query).getSingleResult();
+
+			return count > 0; 
+
+		} catch (final Exception exception) {
+			throw RepositoryUcobetException.create(null, null, exception);
+		}
+
+	}
 }
