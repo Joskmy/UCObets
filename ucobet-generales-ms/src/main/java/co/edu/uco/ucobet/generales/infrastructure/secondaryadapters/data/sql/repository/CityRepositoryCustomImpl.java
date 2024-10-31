@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.stereotype.Repository;
+
 import co.edu.uco.ucobet.generales.application.secondaryports.entity.CityEntity;
 import co.edu.uco.ucobet.generales.application.secondaryports.repository.CityRepositoryCustom;
 import co.edu.uco.ucobet.generales.crosscutting.exceptions.RepositoryUcobetException;
@@ -13,6 +15,7 @@ import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.Predicate;
 
+@Repository
 public final class CityRepositoryCustomImpl implements CityRepositoryCustom {
 
 	private EntityManager entityManager;
@@ -70,11 +73,13 @@ public final class CityRepositoryCustomImpl implements CityRepositoryCustom {
 
 			Long count = entityManager.createQuery(query).getSingleResult();
 
-			return count > 0; 
+			return count > 0;
 
 		} catch (final Exception exception) {
 			throw RepositoryUcobetException.create(null, null, exception);
 		}
 
 	}
+
+	
 }

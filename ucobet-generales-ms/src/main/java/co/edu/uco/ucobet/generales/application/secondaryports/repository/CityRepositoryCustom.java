@@ -12,4 +12,5 @@ import co.edu.uco.ucobet.generales.application.secondaryports.entity.CityEntity;
 public interface CityRepositoryCustom {
 	List<CityEntity> findByFilter(CityEntity filter);
     boolean isCityUsed(UUID cityId);
+
 }

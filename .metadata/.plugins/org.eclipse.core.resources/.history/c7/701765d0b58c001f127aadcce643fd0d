@@ -1,9 +1,0 @@
-package co.edu.uco.ucobet.generales.application.secondaryports.repository;
-
-import java.util.List;
-
-import co.edu.uco.ucobet.generales.application.secondaryports.entity.CityEntity;
-
-public interface CityRepositoryCustom {
-	List<CityEntity> findByFilter(CiryEntity filter);
-}

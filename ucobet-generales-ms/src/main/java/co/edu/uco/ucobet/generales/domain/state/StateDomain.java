@@ -29,7 +29,7 @@ public final class StateDomain extends Domain {
 	}
 
 	
-	public final void setCountry(final CountryDomain country) {
+	private final void setCountry(final CountryDomain country) {
 		this.country = country;
 	}
 	

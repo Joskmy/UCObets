@@ -12,7 +12,7 @@ public class CityNameLenghtIsNotValidException extends RuleUcobetException {
 	
 
 	public static CityNameLenghtIsNotValidException create() {
-		var userMessage = "El nombre de la ciudad debe tener al menos 50 caracteres...";
+		var userMessage = "El nombre de la ciudad debe tener al menos 255 caracteres...";
 		return new CityNameLenghtIsNotValidException(userMessage);
     }
 

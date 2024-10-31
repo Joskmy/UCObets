@@ -6,10 +6,11 @@ import co.edu.uco.ucobet.generales.domain.city.rules.CityNameFormatIsValidRule;
 public class CityNameFormatIsValidRuleImpl implements CityNameFormatIsValidRule {
 
 	@Override
-    public void validate(String data) {
-	    if (data.length() < 50) {
-	        throw CityNameFormatIsNotValidException.forShortName(); 
-	    }
-    }
+	public void validate(String data) {
+
+		if (!data.matches("^[a-zA-ZñÑáéíóúüÁÉÍÓÚ ]+$")) {
+			throw CityNameFormatIsNotValidException.forInvalidFormat();
+		}
+	}
 
 }

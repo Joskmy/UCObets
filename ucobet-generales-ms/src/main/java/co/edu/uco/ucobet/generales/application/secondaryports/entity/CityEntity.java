@@ -13,7 +13,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Ciry")
+@Table(name = "City")
 
 public final class CityEntity {
 
@@ -40,15 +40,15 @@ public final class CityEntity {
 		setState(state);
 	}
 
-	static final CityEntity create() {
+	public static final CityEntity create() {
 		return new CityEntity();
 	}
 
-	static final CityEntity create(final UUID id, final String name, final StateEntity state) {
+	public static final CityEntity create(final UUID id, final String name, final StateEntity state) {
 		return new CityEntity(id, name, state);
 	}
 
-	static final CityEntity create(final UUID id) {
+	public static final CityEntity create(final UUID id) {
 		return new CityEntity(id, TextHelper.EMPTY, StateEntity.create());
 	}
 

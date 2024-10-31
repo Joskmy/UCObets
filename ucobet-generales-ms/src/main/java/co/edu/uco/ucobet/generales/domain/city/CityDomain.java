@@ -30,5 +30,6 @@ public final class CityDomain extends Domain {
 	private final void setState(final StateDomain state) {
 		this.state = state;
 	}
+	
 
 }

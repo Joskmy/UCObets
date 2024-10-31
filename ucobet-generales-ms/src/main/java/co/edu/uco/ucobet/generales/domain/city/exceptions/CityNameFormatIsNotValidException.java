@@ -10,16 +10,8 @@ public class CityNameFormatIsNotValidException extends RuleUcobetException {
         super(userMessage, userMessage, new Exception());
     }
 
-	public static CityNameFormatIsNotValidException forNullName() {
-        return new CityNameFormatIsNotValidException("El nombre de la ciudad no puede ser nulo...");
-    }
-
-    public static CityNameFormatIsNotValidException forEmptyName() {
-        return new CityNameFormatIsNotValidException("El nombre de la ciudad no puede estar vacío...");
-    }
-
-    public static CityNameFormatIsNotValidException forShortName() {
-        return new CityNameFormatIsNotValidException("El nombre de la ciudad debe tener al menos 50 caracteres.");
+    public static CityNameFormatIsNotValidException forInvalidFormat() {
+        return new CityNameFormatIsNotValidException("El nombre de la ciudad solo puede contener letras y espacios(con y sin tílde)");
     }
 
 }

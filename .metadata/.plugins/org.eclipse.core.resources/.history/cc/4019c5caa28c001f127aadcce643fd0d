@@ -1,9 +1,0 @@
-package co.edu.uco.ucobet.generales.application.secondaryports.entity;
-
-import java.util.UUID;
-
-public final class CountryEntity {
-	private UUID id;
-	private String name;
-
-}

@@ -2,6 +2,8 @@ package co.edu.uco.ucobet.generales.domain;
 
 import java.util.UUID;
 
+import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
+
 public class Domain {
 	private UUID id;
 
@@ -15,6 +17,10 @@ public class Domain {
 
 	private final void setId(final UUID id) {
 		this.id = id;
+	}
+	
+	public void generateId() {
+		this.id = UUIDHelper.generate();
 	}
 
 }
