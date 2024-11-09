@@ -11,7 +11,7 @@ import co.edu.uco.ucobet.generales.domain.city.rules.CityIdDoesExistsRule;
 @Service
 public final class CityIdDoesExistsRuleImpl implements CityIdDoesExistsRule {
 	
-	private CityRepository cityRepository;
+	private final CityRepository cityRepository;
 	
 	
 	public CityIdDoesExistsRuleImpl(final CityRepository cityRepository) {

@@ -27,9 +27,9 @@ public final class RegisterNewCityRulesValidatorImp implements RegisterNewCityRu
 
 	@Override
 	public void validate(final CityDomain data) {
-		registerNewCityIdRulesValidator.validate(data);
-		registerNewCityNameRulesValidator.validate(data);
-		regjsCityStateRulesValidator.validate(data.getState().getId());
+		//registerNewCityIdRulesValidator.validate(data);
+		//registerNewCityNameRulesValidator.validate(data);
+		//regjsCityStateRulesValidator.validate(data.getState().getId());
 
 	}
 

@@ -3,6 +3,8 @@ package co.edu.uco.ucobet.generales.domain.city.exceptions;
 import java.util.UUID;
 
 import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 
 public class CityNameForStateDoesExistException extends RuleUcobetException {
 
@@ -13,7 +15,7 @@ public class CityNameForStateDoesExistException extends RuleUcobetException {
     }
 
     public static CityNameForStateDoesExistException create(String cityName, UUID stateId) {
-        var userMessage = String.format("La ciudad '%s' ya existe en el estado con ID: %s...", cityName, stateId);
+        var userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00015);
         return new CityNameForStateDoesExistException(userMessage);
     }
 

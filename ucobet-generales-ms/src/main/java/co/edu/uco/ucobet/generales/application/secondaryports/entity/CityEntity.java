@@ -25,7 +25,7 @@ public final class CityEntity {
 	private String name;
 
 	@ManyToOne
-	@JoinColumn(name = "state")
+	@JoinColumn(name = "state_id")
 	private StateEntity state;
 
 	CityEntity() {
@@ -75,13 +75,11 @@ public final class CityEntity {
 	public void setState(final StateEntity state) {
 		this.state = ObjectHelper.getDefault(state, StateEntity.create());
 	}
-	
+
 	@Override
-    public String toString() {
-        return "CityEntity{" +
-               "id=" + id + 
-               ", name='" + name + '\'' +
-               ", state=" + (state != null ? state : "null") + // Aquí asumimos que StateEntity tiene un método getName()
-               '}';
-    }
+	public String toString() {
+		return "CityEntity [id=" + id + ", name=" + name + ", state=" + state + "]";
+	}
+	
+	
 }

@@ -1,6 +1,8 @@
 package co.edu.uco.ucobet.generales.domain.city.exceptions;
 
 import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 
 public class CityNameIsEmptyException extends RuleUcobetException {
 
@@ -12,7 +14,7 @@ public class CityNameIsEmptyException extends RuleUcobetException {
 
 
 	public static CityNameIsEmptyException create(){
-		var userMessage = "El nombre de la ciudad no puede estar vacio...";
+		var userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00016);
 		return new CityNameIsEmptyException(userMessage);
 	}
 

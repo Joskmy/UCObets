@@ -5,11 +5,14 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import co.edu.uco.ucobet.generales.application.secondaryports.entity.CityEntity;
 import co.edu.uco.ucobet.generales.application.secondaryports.entity.StateEntity;
 import co.edu.uco.ucobet.generales.application.secondaryports.repository.CityRepositoryCustom;
 import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RepositoryUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 import co.edu.uco.ucobet.generales.crosscutting.helpers.ObjectHelper;
 import co.edu.uco.ucobet.generales.crosscutting.helpers.TextHelper;
 import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
@@ -17,7 +20,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.Predicate;
 
 @Repository
-public  class CityRepositoryCustomImpl implements CityRepositoryCustom {
+@Transactional
+public class CityRepositoryCustomImpl implements CityRepositoryCustom {
 
 	private EntityManager entityManager;
 
@@ -58,43 +62,45 @@ public  class CityRepositoryCustomImpl implements CityRepositoryCustom {
 
 	@Override
 	public boolean isCityUsed(final UUID cityId) {
-		try {
-			var criteriaBuilder = entityManager.getCriteriaBuilder();
-			var query = criteriaBuilder.createQuery(Long.class);
-			var root = query.from(CityEntity.class);
-
-			query.select(criteriaBuilder.count(root)).where(criteriaBuilder.equal(root.get("id"), cityId));
-
-			Long count = entityManager.createQuery(query).getSingleResult();
-
-			return count > 0;
-
-		} catch (final Exception exception) {
-			throw RepositoryUcobetException.create(null, null,
-					exception);
-		}
-
-	}
-	
-	@Override
-	public boolean existsByNameAndState(String name, StateEntity state) {
 	    try {
 	        var criteriaBuilder = entityManager.getCriteriaBuilder();
 	        var query = criteriaBuilder.createQuery(Long.class);
 	        var root = query.from(CityEntity.class);
 
-	        query.select(criteriaBuilder.count(root)).where(criteriaBuilder.and(
-	                criteriaBuilder.equal(root.get("name"), name), 
-	                criteriaBuilder.equal(root.get("state").get("id"), state.getId())
-	        ));
+	        query.select(criteriaBuilder.count(root))
+	             .where(criteriaBuilder.equal(root.get("id"), cityId));
 
 	        Long count = entityManager.createQuery(query).getSingleResult();
 
 	        return count > 0;
 
 	    } catch (final Exception exception) {
-	        throw RepositoryUcobetException.create(null, null, exception);
+	        throw RepositoryUcobetException.create(
+	            MessageCatalogStrategy.getContentMessage(MessageCode.M00011), 
+	            MessageCatalogStrategy.getContentMessage(MessageCode.M00012), 
+	            exception
+	        );
 	    }
 	}
-	
+
+	@Override
+	public boolean existsByNameAndState(String name, StateEntity state) {
+		try {
+			var criteriaBuilder = entityManager.getCriteriaBuilder();
+			var query = criteriaBuilder.createQuery(Long.class);
+			var root = query.from(CityEntity.class);
+
+			query.select(criteriaBuilder.count(root))
+					.where(criteriaBuilder.and(criteriaBuilder.equal(root.get("name"), name),
+							criteriaBuilder.equal(root.get("state").get("id"), state.getId())));
+
+			Long count = entityManager.createQuery(query).getSingleResult();
+
+			return count > 0;
+
+		} catch (final Exception exception) {
+			throw RepositoryUcobetException.create(null, null, exception);
+		}
+	}
+
 }

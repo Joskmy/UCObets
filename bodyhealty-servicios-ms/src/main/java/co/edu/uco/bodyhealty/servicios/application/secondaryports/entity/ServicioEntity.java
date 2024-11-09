@@ -96,6 +96,15 @@ public final class ServicioEntity {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = TextHelper.applyTrim(descripcion);
 	}
+
+
+	@Override
+	public String toString() {
+		return "ServicioEntity [id=" + id + ", nombreServicio=" + nombreServicio + ", duracionEstimada="
+				+ duracionEstimada + ", descripcion=" + descripcion + "]";
+	}
+	
+	
 	
 	
 

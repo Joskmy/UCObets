@@ -25,7 +25,7 @@ public final class StateEntity {
 	private String name;
 
 	@ManyToOne
-	@JoinColumn(name = "country")
+	@JoinColumn(name = "country_id")
 	private CountryEntity country;
 
 	StateEntity() {
@@ -75,5 +75,12 @@ public final class StateEntity {
 	public void setCountry(final CountryEntity country) {
 		this.country = ObjectHelper.getDefault(country, CountryEntity.create());
 	}
+
+	@Override
+	public String toString() {
+		return "StateEntity [id=" + id + ", name=" + name + ", country=" + country + "]";
+	}
+	
+	
 
 }

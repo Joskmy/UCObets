@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #4CAF50;
+    --primary-color-hover: #45a049;
+    --text-color: #333;
+    --text-color-h2: #08e251;
+    --font-size-heading: 24px;
+    --font-size-input: 16px;
+    --padding-input: 8px;
+    --padding-button: 10px;
+    --border-radius: 80px;
+    --border-color: #ccc;
+    --container-margin: 20px;
+    --form-width: 300px;
+    --gap-between-elements: 10px;
+  }
+  
+  .create-city-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--container-margin);
+    padding: 20px; 
+    border: 1px solid var(--border-color); 
+    border-radius: var(--border-radius); 
+    box-shadow: 0 4px 8px rgba(4, 236, 128, 0.925); 
+    width: 400px; 
+    max-width: 90%; 
+    margin: 20px auto; 
+  }
+  
+  h2{
+    color: var(--text-color-h2);
+    font-size: var(--font-size-heading);
+    margin-bottom: var(--container-margin);
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-between-elements);
+    width: var(--form-width);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    padding: var(--padding-input);
+    font-size: var(--font-size-input);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-button);
+    font-size: var(--font-size-input);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: var(--primary-color-hover);
+  }

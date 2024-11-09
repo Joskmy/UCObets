@@ -1,6 +1,8 @@
 package co.edu.uco.ucobet.generales.domain.city.exceptions;
 
 import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 
 public class CityNameLenghtIsNotValidException extends RuleUcobetException {
 
@@ -12,7 +14,7 @@ public class CityNameLenghtIsNotValidException extends RuleUcobetException {
 	
 
 	public static CityNameLenghtIsNotValidException create() {
-		var userMessage = "El nombre de la ciudad debe tener al menos 255 caracteres...";
+		var userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00018);
 		return new CityNameLenghtIsNotValidException(userMessage);
     }
 

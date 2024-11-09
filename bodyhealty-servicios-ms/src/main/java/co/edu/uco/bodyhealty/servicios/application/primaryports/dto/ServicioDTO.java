@@ -42,4 +42,11 @@ public final class ServicioDTO {
 		this.descripcion = TextHelper.applyTrim(descripcion);
 	}
 
+	@Override
+	public String toString() {
+		return "ServicioDTO [nombreServicio=" + nombreServicio + ", duracionEstimada=" + duracionEstimada
+				+ ", descripcion=" + descripcion + "]";
+	}
+	
+
 }

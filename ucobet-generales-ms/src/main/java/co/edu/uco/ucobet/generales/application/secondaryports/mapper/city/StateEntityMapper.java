@@ -8,7 +8,7 @@ import org.mapstruct.factory.Mappers;
 import co.edu.uco.ucobet.generales.application.secondaryports.entity.StateEntity;
 import co.edu.uco.ucobet.generales.domain.state.StateDomain;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface StateEntityMapper {
 	StateEntityMapper INSTANCE = Mappers.getMapper(StateEntityMapper.class);
 	

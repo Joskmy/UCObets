@@ -1,6 +1,8 @@
 package co.edu.uco.ucobet.generales.domain.city.exceptions;
 
 import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 
 public class CityStateDoesNotExistsException extends RuleUcobetException {
 
@@ -11,7 +13,7 @@ public class CityStateDoesNotExistsException extends RuleUcobetException {
     }
 
 	public static CityStateDoesNotExistsException create() {
-		var userMessage = "Ya existe un estado con el ID proporcionado...";
+		var userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00019);
 		return new CityStateDoesNotExistsException(userMessage);
 	}
 

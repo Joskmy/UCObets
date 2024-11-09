@@ -8,53 +8,48 @@ import co.edu.uco.ucobet.generales.application.secondaryports.repository.CityRep
 import co.edu.uco.ucobet.generales.application.usecase.city.RegisterNewCity;
 import co.edu.uco.ucobet.generales.application.usecase.city.RegisterNewCityRulesValidator;
 import co.edu.uco.ucobet.generales.domain.city.CityDomain;
-import jakarta.transaction.Transactional;
+import co.edu.uco.ucobet.generales.infrastructure.secondaryadapters.notificationservice.EmailService;
 
-
-@Transactional
 @Service
 public final class RegisterNewCityImpl implements RegisterNewCity {
 
 	private CityRepository cityRepository;
-	//private RegisterNewCityRulesValidator registerNewCityRulesValidator;
+    private final EmailService emailService;
+	private RegisterNewCityRulesValidator registerNewCityRulesValidator;
 
 	public RegisterNewCityImpl(final CityRepository cityRepository,
+			final  EmailService emailService,
 			final RegisterNewCityRulesValidator registerNewCityRulesValidator) {
 		this.cityRepository = cityRepository;
-		//this.registerNewCityRulesValidator = registerNewCityRulesValidator;
+		this.emailService = emailService;
+		this.registerNewCityRulesValidator = registerNewCityRulesValidator;
 	}
 
 	@Override
 	public void execute(final CityDomain domain) {
 
 		// Rules validation
-		//registerNewCityRulesValidator.validate(domain);
+		registerNewCityRulesValidator.validate(domain);
 
 		// DataMapper -> Domain -> Entity
 		System.out.println("se inció el proceso de DOMAIN a Entity {}" + domain);
 
 		final CityEntity cityEntity = CityEntityMapper.INSTANCE.domainToEntity(domain);
-		
+
 		System.out.println("Se logró transformar de DOMAIN a Entity");
-		
+
 		System.out.println("El Entity se ve: " + cityEntity.toString());
-		
+
 		System.out.println("Empieza el proceso de guardado");
 		cityRepository.save(cityEntity);
-		System.out.println("Se logró Guardar CityEntity" + domain.getName()); 
+		System.out.println("Se logró Guardar CityEntity" + domain.getName());
+		try {
+			emailService.notificarNuevaCiudad(domain.getName());
+            System.out.println("Correo de notificación enviado exitosamente para la ciudad: " + domain.getName());
+        } catch (Exception e) {
+            System.err.println("Error al enviar el correo de notificación: " + e.getMessage());
+        }
 
-
-		// Notificar al administrador sobre la creación de la nueva ciudad
-		// : ¿Cómo? Notification Building Block
-
-		// Tenga en cuenta que:
-		// 1. El correo del administrador está en un lugar parametrizado (Parameters
-		// Building Block)
-		// 2. El asunto del correo está en un lugar parametrizado (Parameters Building
-		// Block)
-		// 3. El cuerpo del correo está en un lugar parametrizado (Parameters Building
-		// Block)
 	}
-
 
 }
