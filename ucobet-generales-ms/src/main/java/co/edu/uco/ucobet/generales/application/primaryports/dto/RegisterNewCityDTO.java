@@ -34,5 +34,13 @@ public final class RegisterNewCityDTO {
 	private void setStateId(final UUID stateId) {
 		this.stateId = UUIDHelper.getDefault(stateId, UUIDHelper.getDefault());
 	}
+	
+	@Override
+    public String toString() {
+        return "RegisterNewCityDTO{" +
+               "cityName='" + cityName + '\'' +
+               ", stateId=" + stateId +
+               '}';
+    }
 
 }

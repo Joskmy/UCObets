@@ -13,6 +13,7 @@ public final class CityDomain extends Domain {
 		super(id);
 		setName(name);
 		setState(state);
+	    System.out.println("CityDomain creado -> id: " + id + ", name: " + name + ", country: " + state);
 	}
 
 	public final String getName() {
@@ -31,5 +32,12 @@ public final class CityDomain extends Domain {
 		this.state = state;
 	}
 	
-
+	@Override
+	public String toString() {
+	    return "CityDomain{" +
+	           "id=" + getId() + 
+	           ", name='" + name + '\'' +
+	           ", state=" + (state != null ? state : "null") + 
+	           '}';
+	}
 }

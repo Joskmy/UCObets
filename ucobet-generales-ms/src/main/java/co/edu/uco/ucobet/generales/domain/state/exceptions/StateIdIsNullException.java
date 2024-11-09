@@ -1,6 +1,6 @@
 package co.edu.uco.ucobet.generales.domain.state.exceptions;
 
-import co.edu.uco.ucobet.generales.crosscutting.exceptions.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
 
 public class StateIdIsNullException extends RuleUcobetException {
 

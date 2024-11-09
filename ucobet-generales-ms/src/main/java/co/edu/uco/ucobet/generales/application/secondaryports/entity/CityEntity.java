@@ -75,5 +75,13 @@ public final class CityEntity {
 	public void setState(final StateEntity state) {
 		this.state = ObjectHelper.getDefault(state, StateEntity.create());
 	}
-
+	
+	@Override
+    public String toString() {
+        return "CityEntity{" +
+               "id=" + id + 
+               ", name='" + name + '\'' +
+               ", state=" + (state != null ? state : "null") + // Aquí asumimos que StateEntity tiene un método getName()
+               '}';
+    }
 }

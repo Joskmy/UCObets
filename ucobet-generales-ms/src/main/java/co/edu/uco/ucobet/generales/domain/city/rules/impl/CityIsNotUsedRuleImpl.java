@@ -2,12 +2,21 @@ package co.edu.uco.ucobet.generales.domain.city.rules.impl;
 
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import co.edu.uco.ucobet.generales.application.secondaryports.repository.CityRepository;
 import co.edu.uco.ucobet.generales.domain.city.exceptions.CityIsBeingUsedException;
 import co.edu.uco.ucobet.generales.domain.city.rules.CityIsNotUsedRule;
 
+@Service
 public class CityIsNotUsedRuleImpl implements CityIsNotUsedRule {
 
+	@Override
+	public void validate(UUID data) {
+		// TODO Auto-generated method stub
+		
+	}
+/*
 	private final CityRepository cityRepository;
 
 	public CityIsNotUsedRuleImpl(CityRepository cityRepository) {
@@ -21,5 +30,5 @@ public class CityIsNotUsedRuleImpl implements CityIsNotUsedRule {
 			throw CityIsBeingUsedException.create();
 		}
 	}
-
+*/
 }

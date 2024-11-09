@@ -8,13 +8,26 @@ public class UcobetException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	private String userMessage;
 	private Layer layer;
-
+	
+	
 	public UcobetException(final String userMessage, final String TechnicalMessage, final Exception rootException,
-			Layer layer) {
+			final Layer layer) {
 		super(ObjectHelper.getDefault(TechnicalMessage, TextHelper.applyTrim(userMessage)),
 				ObjectHelper.getDefault(rootException, new Exception()));
 		setUserMessage(userMessage);
 		setLayer(layer);
+	}
+	
+	public UcobetException(final String userMessage, final String TechnicalMessage, final Layer layer) {
+		super(ObjectHelper.getDefault(TechnicalMessage, TextHelper.applyTrim(userMessage)));
+		setUserMessage(userMessage);
+		setLayer(layer);	
+	}
+	
+	public UcobetException(final String userMessage,final Layer layer) {
+		super(TextHelper.applyTrim(userMessage));
+		setUserMessage(userMessage);
+		setLayer(layer);	
 	}
 
 	public String getUserMessage() {

@@ -1,6 +1,6 @@
 package co.edu.uco.ucobet.generales.domain.city.exceptions;
 
-import co.edu.uco.ucobet.generales.crosscutting.exceptions.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
 
 public class CityIsBeingUsedException extends RuleUcobetException {
 

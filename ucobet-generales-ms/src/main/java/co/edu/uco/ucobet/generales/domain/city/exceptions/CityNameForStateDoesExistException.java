@@ -2,7 +2,7 @@ package co.edu.uco.ucobet.generales.domain.city.exceptions;
 
 import java.util.UUID;
 
-import co.edu.uco.ucobet.generales.crosscutting.exceptions.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
 
 public class CityNameForStateDoesExistException extends RuleUcobetException {
 

@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EntityScan(basePackages = {"co.edu.uco.ucobet.generales.application.secondaryports.entity" })
 @ComponentScan(basePackages = { "co.edu.uco.ucobet" })
-@EnableJpaRepositories(basePackages = "co.edu.uco.ucobet.generales.application.secondaryports.repository")
-@EntityScan(basePackages = "co.edu.uco.ucobet.generales.application.secondaryports.entity")
+@EnableJpaRepositories(basePackages = {"co.edu.uco.ucobet.generales.application.secondaryports.repository"})
 
 public class UcobetGeneralesMsApplication {
 
