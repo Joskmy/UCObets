@@ -1,7 +1,7 @@
 package co.edu.uco.ucobet.generales.domain.city.rules.impl;
 
 
-/*
+
 import org.springframework.stereotype.Service;
 
 import co.edu.uco.ucobet.generales.application.secondaryports.mapper.city.CityEntityMapper;
@@ -39,4 +39,3 @@ public class CityNameForStateDoesNotExistRuleImpl implements CityNameForStateDoe
         }
     }
 }
-*/

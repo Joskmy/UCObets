@@ -6,6 +6,9 @@ import co.edu.uco.ucobet.generales.application.primaryports.dto.RegisterNewCityD
 import co.edu.uco.ucobet.generales.application.primaryports.interactor.city.RegisterNewCityInteractor;
 import co.edu.uco.ucobet.generales.application.primaryports.mapper.city.RegisterNewCityMapperDTO;
 import co.edu.uco.ucobet.generales.application.usecase.city.RegisterNewCity;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.ApplicationUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 import co.edu.uco.ucobet.generales.domain.city.CityDomain;
 
 @Service
@@ -20,15 +23,10 @@ public class RegisterNewCityInteractorImpl implements RegisterNewCityInteractor 
 	@Override
 	public void execute(final RegisterNewCityDTO data) {
 		try {
-			System.out.println("Iniciando el registro de la ciudad: " + data.getCityName());
-	        System.out.println("DTO recibido: " + data);
 			CityDomain cityDomain = RegisterNewCityMapperDTO.INSTANCE.toDomain(data);
-			System.out.println("Se convirtió de DTO a domain" + data.getCityName());
-	        System.out.println("DOMAIN recibido: " + cityDomain);
-			registerNewCity.execute(cityDomain); // Registro de la ciudad
-			System.out.println("Ciudad registrada con éxito: {}" + data.getCityName()); // Log de éxito
-		} catch (Exception ex) {
-			throw new RuntimeException("Error al crear la ciudad", ex);
+			registerNewCity.execute(cityDomain); 
+		} catch (ApplicationUcobetException exception) {
+			throw ApplicationUcobetException.create(MessageCatalogStrategy.getContentMessage(MessageCode.M00020));
 		}
 	}
 }

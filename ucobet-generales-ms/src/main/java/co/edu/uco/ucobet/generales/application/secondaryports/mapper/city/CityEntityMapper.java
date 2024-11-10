@@ -8,7 +8,8 @@ import org.mapstruct.factory.Mappers;
 import co.edu.uco.ucobet.generales.application.secondaryports.entity.CityEntity;
 import co.edu.uco.ucobet.generales.domain.city.CityDomain;
 
-@Mapper
+@Mapper(componentModel = "spring")
+
 public interface CityEntityMapper {
 	CityEntityMapper INSTANCE = Mappers.getMapper(CityEntityMapper.class);
 

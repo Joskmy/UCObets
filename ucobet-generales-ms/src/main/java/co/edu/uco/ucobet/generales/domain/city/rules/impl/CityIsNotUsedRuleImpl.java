@@ -1,5 +1,5 @@
 package co.edu.uco.ucobet.generales.domain.city.rules.impl;
-
+/*
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
@@ -20,10 +20,12 @@ public class CityIsNotUsedRuleImpl implements CityIsNotUsedRule {
 
 	@Override
 	public void validate(UUID data) {
-		boolean isUsed = cityRepository.isCityUsed(data);
+		/*boolean isUsed = cityRepository.isCityUsed(data);
 		if (isUsed) {
 			throw CityIsBeingUsedException.create();
 		}
+		
 	}
 
 }
+*/

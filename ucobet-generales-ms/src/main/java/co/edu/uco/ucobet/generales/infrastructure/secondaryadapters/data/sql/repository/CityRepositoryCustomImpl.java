@@ -19,7 +19,7 @@ import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.Predicate;
 
-@Repository
+@Repository("cityRepositoryImpl")
 @Transactional
 public class CityRepositoryCustomImpl implements CityRepositoryCustom {
 

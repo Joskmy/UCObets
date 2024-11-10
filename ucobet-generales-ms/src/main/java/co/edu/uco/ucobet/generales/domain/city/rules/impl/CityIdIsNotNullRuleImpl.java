@@ -13,7 +13,6 @@ public final class CityIdIsNotNullRuleImpl implements CityIdIsNotNullRule {
 
 	@Override
 	public void validate(UUID data) {
-		System.out.println("ESTA ES LA DATA" + data);
 		if (ObjectHelper.isNull(data)) {
 			throw CityIdIsNullException.create();
 		}

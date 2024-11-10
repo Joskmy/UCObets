@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import co.edu.uco.ucobet.generales.application.usecase.city.RegisterNewCityIdRulesValidator;
 import co.edu.uco.ucobet.generales.domain.city.CityDomain;
-import co.edu.uco.ucobet.generales.domain.city.exceptions.CityIdDoesExistsException;
 import co.edu.uco.ucobet.generales.domain.city.rules.CityIdDoesNotExistsRule;
 import co.edu.uco.ucobet.generales.domain.city.rules.CityIdIsNotNullRule;
 
@@ -18,21 +17,15 @@ public final class RegisterNewCityIdRulesValidatorImp implements RegisterNewCity
 	private CityIdDoesNotExistsRule cityIdDoesNotExistsRule;
 	
 	
-	public RegisterNewCityIdRulesValidatorImp(final CityIdDoesNotExistsRule cityIdDoesNotExistsRule) {
+	public RegisterNewCityIdRulesValidatorImp(final CityIdDoesNotExistsRule cityIdDoesNotExistsRule, final CityIdIsNotNullRule cityIdIsNotNullRule) {
 		this.cityIdDoesNotExistsRule = cityIdDoesNotExistsRule;
+		this.cityIdIsNotNullRule = cityIdIsNotNullRule;
 	}
 
 	@Override
 	public void validate(final CityDomain data) {
-		try {
-			data.generateId();
-			cityIdDoesNotExistsRule.validate(data.getId());
-		} catch (final CityIdDoesExistsException exception) {
-			validate(data);
-		}
-		
+		cityIdDoesNotExistsRule.validate(data.getId());
 		cityIdIsNotNullRule.validate(data.getId());
-
 	}
 
 

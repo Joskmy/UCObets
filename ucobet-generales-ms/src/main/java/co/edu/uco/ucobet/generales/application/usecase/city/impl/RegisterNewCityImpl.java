@@ -31,18 +31,9 @@ public final class RegisterNewCityImpl implements RegisterNewCity {
 		// Rules validation
 		registerNewCityRulesValidator.validate(domain);
 
-		// DataMapper -> Domain -> Entity
-		System.out.println("se inció el proceso de DOMAIN a Entity {}" + domain);
-
 		final CityEntity cityEntity = CityEntityMapper.INSTANCE.domainToEntity(domain);
 
-		System.out.println("Se logró transformar de DOMAIN a Entity");
-
-		System.out.println("El Entity se ve: " + cityEntity.toString());
-
-		System.out.println("Empieza el proceso de guardado");
 		cityRepository.save(cityEntity);
-		System.out.println("Se logró Guardar CityEntity" + domain.getName());
 		try {
 			emailService.notificarNuevaCiudad(domain.getName());
             System.out.println("Correo de notificación enviado exitosamente para la ciudad: " + domain.getName());

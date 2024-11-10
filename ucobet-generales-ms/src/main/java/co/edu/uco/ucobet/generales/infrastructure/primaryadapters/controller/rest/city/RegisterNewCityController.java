@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.edu.uco.ucobet.generales.application.primaryports.dto.RegisterNewCityDTO;
@@ -13,7 +14,10 @@ import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
 
 @RestController
 @RequestMapping("/general/api/v1/cities")
-@CrossOrigin(origins = { "http://localhost:4200", "http://localhost:3000", "http://localhost:8080" })
+@CrossOrigin(origins = {"http://localhost:3000"}, 
+methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS},
+allowedHeaders = "*",
+allowCredentials = "false")
 public class RegisterNewCityController {
 
 	private final RegisterNewCityInteractor registerNewCityInteractor;

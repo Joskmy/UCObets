@@ -10,7 +10,7 @@ public class CityNameLenghtIsValidRuleImpl implements CityNameLenghtIsValidRule{
 	
 	@Override
     public void validate(String data) {
-	    if (data.length() < 255) {
+	    if (data.length() > 255) {
 	        throw CityNameLenghtIsNotValidException.create(); 
 	    }
     }
