@@ -38,21 +38,21 @@ public final class MessageCatalogBase implements MessageCatalog {
 		messages.put(MessageCode.M00011.getIdentifier(),
 				new Message(MessageCode.M00011, "La descripción del servicio no puede estar vacia..."));
 		messages.put(MessageCode.M00012.getIdentifier(), new Message(MessageCode.M00012,
-				"La duración del servicio no puede durar menos de 15 minutos..."));
+				"La duración del servicio no puede durar menos de 15 minutos, ni más de 300(5 horas) minutos..."));
 		messages.put(MessageCode.M00013.getIdentifier(),
 				new Message(MessageCode.M00013, "Ha ocurrido un error inesperado en el sistema intentado registrar el servicio ${1}..."));
 		messages.put(MessageCode.M00014.getIdentifier(), new Message(MessageCode.M00014,
-				"En el proceso de mappeo de DTO a Dominio ha ocurrido un error intentado registrar el servicio {1}..."));
+				"En el proceso de mappeo de DTO a Dominio ha ocurrido un error intentado registrar el servicio ${1}..."));
 		messages.put(MessageCode.M00015.getIdentifier(),
-				new Message(MessageCode.M00015, "El servicio con el ID {1} no existe en el sistema..."));
+				new Message(MessageCode.M00015, "El servicio con el ID ${1} no existe en el sistema..."));
 		messages.put(MessageCode.M00016.getIdentifier(),
-				new Message(MessageCode.M00016, "El servicio con el ID {1} existe en el sistema..."));
+				new Message(MessageCode.M00016, "El servicio con el ID ${1} existe en el sistema..."));
 		messages.put(MessageCode.M00017.getIdentifier(),
 				new Message(MessageCode.M00017, "El ID del servicio no puede ser nulo..."));
 		messages.put(MessageCode.M00018.getIdentifier(),
-				new Message(MessageCode.M00018, "El servicio con ID {1} está siendo utilizado..."));
+				new Message(MessageCode.M00018, "El servicio con ID ${1} está siendo utilizado..."));
 		messages.put(MessageCode.M00019.getIdentifier(),
-				new Message(MessageCode.M00019, "Ha ocurrido un error buscando el servicio con id {1} en el sistema..."));
+				new Message(MessageCode.M00019, "Ha ocurrido un error buscando el servicio con id ${1} en el sistema..."));
 		messages.put(MessageCode.M00020.getIdentifier(), new Message(MessageCode.M00020,
 				"Ha ocurrido un error inesperado cuando se estaba buscando el servicio en la base de datos en la parte de  ServicioRepositoryCustomImpl"));
 		messages.put(MessageCode.M00021.getIdentifier(), new Message(MessageCode.M00021,
@@ -65,8 +65,15 @@ public final class MessageCatalogBase implements MessageCatalog {
 				"El nombre del servicio no tiene un formato válido. Solo se permiten letras (con o sin tilde), y espacios."));
 		messages.put(MessageCode.M00029.getIdentifier(), new Message(MessageCode.M00029,
 				"El nombre del servicio no puede tener más de 50 carácteres"));
+		messages.put(MessageCode.M00030.getIdentifier(), new Message(MessageCode.M00030,
+				"Ha ocurrido un error inesperado en el sistema tratando de modificar el servicio..."));
+		messages.put(MessageCode.M00031.getIdentifier(), new Message(MessageCode.M00031,
+				"Ha ocurrido un error durante el mappeo o algo inesperado en la capa del Interactor..."));
+		messages.put(MessageCode.M00032.getIdentifier(), new Message(MessageCode.M00031,
+				"Se ha modificado con éxito el Servicio con ID ${1} en el sistema..."));
+		messages.put(MessageCode.M00033.getIdentifier(), new Message(MessageCode.M00031,
+				"Se ha modificado con éxito el Servicio con nombre ${1} en el sistema..."));
 		
-
 	}
 
 	@Override

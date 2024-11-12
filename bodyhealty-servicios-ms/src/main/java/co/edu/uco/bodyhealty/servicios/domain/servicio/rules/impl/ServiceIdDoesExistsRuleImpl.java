@@ -19,7 +19,11 @@ public class ServiceIdDoesExistsRuleImpl implements ServiceIdDoesExistsRule{
 
     @Override
     public void validate(ServicioDomain data) {
-        if (!servicioRepository.existsById(data.getId())) {
+        System.out.println("Validando existencia del ID: " + data.getId());
+        boolean exists = servicioRepository.existsById(data.getId());
+        System.out.println("¿Existe el ID?: " + exists);
+        
+        if (!exists) {
             throw ServiceIdDoesNotExistsException.create(data.getId());
         }
     }

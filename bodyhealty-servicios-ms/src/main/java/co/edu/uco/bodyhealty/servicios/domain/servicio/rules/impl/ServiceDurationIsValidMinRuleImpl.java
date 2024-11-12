@@ -12,7 +12,7 @@ public class ServiceDurationIsValidMinRuleImpl implements ServiceDurationIsValid
 
 	@Override
     public void validate(ServicioDomain data) {
-        if (NumericHelper.isLess(data.getDuracionEstimada(), 15)) {
+        if (!NumericHelper.isBetween(data.getDuracionEstimada(), 15, 300, true, true)) {
             throw ServiceDurationIsNotValidMinException.create();
         }
     }

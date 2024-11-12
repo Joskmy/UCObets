@@ -15,6 +15,9 @@ public interface ServicioDTOmapper {
 
     @Mapping(target = "id", expression = "java(UUIDHelper.generate())")
     ServicioDomain toDomain(ServicioDTO dto);
+    
+    @Mapping(target = "id", source = "id")
+    ServicioDomain toDomainWithId(UUID id, ServicioDTO dto);
 
     ServicioDTO toDTO(ServicioDomain domain);
 }

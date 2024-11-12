@@ -3,7 +3,6 @@ package co.edu.uco.bodyhealty.servicios.infrastructure.primaryadapters.controlle
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,17 +38,14 @@ public class RegisterNewServiceController {
             servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00007, dto.getNombreServicio()));
 
         } catch (final ApplicationBodyHealtyException exception) {
-        	System.out.println("Entro por ApplicationBodyHealtyException");
             exception.printStackTrace();
             servicioResponse.getMensajes().add(exception.getUserMessage());
             httpStatusResponse = HttpStatus.BAD_REQUEST;
         } catch (final BodyHealtyException exception) {
-        	System.out.println("Entro por BodyHealtyException");
             exception.printStackTrace();
             servicioResponse.getMensajes().add(exception.getUserMessage());
             httpStatusResponse = HttpStatus.BAD_REQUEST;
         } catch (final Exception exception) {
-        	System.out.println("Entro por Exception");
             exception.printStackTrace();
             servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00005));
             httpStatusResponse = HttpStatus.INTERNAL_SERVER_ERROR;
@@ -57,10 +53,5 @@ public class RegisterNewServiceController {
 
         return new ResponseEntity<>(servicioResponse, httpStatusResponse);
     }
-
-	@GetMapping
-	public ServicioDTO executeDummy() {
-		return ServicioDTO.create("Rionegro", 60, "hola");
-	}
 
 }

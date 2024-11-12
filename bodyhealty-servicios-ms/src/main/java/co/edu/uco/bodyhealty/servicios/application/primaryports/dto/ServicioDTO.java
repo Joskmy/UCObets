@@ -18,6 +18,7 @@ public final class ServicioDTO {
 		setNombreServicio(nombreServicio);
 		setDuracionEstimada(duracionEstimada);
 		setDescripcion(descripcion);
+		System.out.println("ServicioDTO creado ->   nombreServicio: " + nombreServicio + ", duracionEstimada: " + duracionEstimada + ", descripcion: " + descripcion);
 	}
 
 	public static final ServicioDTO create(final String nombreServicio, final int duracionEstimada,
