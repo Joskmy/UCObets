@@ -1,5 +1,6 @@
-package co.edu.uco.bodyhealty.servicios.crosscutting.exceptions;
+package co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.custom;
 
+import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.BodyHealtyException;
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.enums.Layer;
 
 public class RepositoryBodyHealtyException extends BodyHealtyException {

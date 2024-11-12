@@ -55,6 +55,14 @@ public final class MessageCatalogBase implements MessageCatalog {
 				new Message(MessageCode.M00019, "Ya existe un estado con el ID proporcionado..."));
 		messages.put(MessageCode.M00020.getIdentifier(), new Message(MessageCode.M00020,
 				"Se produjo un error intentado Registrar una ciudad en la base de datos..."));
+		messages.put(MessageCode.M00021.getIdentifier(), new Message(MessageCode.M00021,
+				"Correo de notificación enviado exitosamente..."));
+		messages.put(MessageCode.M00022.getIdentifier(), new Message(MessageCode.M00022,
+				"Error al enviar el correo de notificación..."));
+		messages.put(MessageCode.M00023.getIdentifier(), new Message(MessageCode.M00023,
+				"No existe un estado con el id indicado..."));
+		messages.put(MessageCode.M00024.getIdentifier(), new Message(MessageCode.M00024,
+				"El id del estado no puede ser nulo..."));
 
 	}
 

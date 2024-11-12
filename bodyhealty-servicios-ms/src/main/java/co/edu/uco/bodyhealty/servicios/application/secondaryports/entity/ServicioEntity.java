@@ -12,20 +12,20 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "Servicios")
 public final class ServicioEntity {
-	
+
 	@Id
 	@Column(name = "id")
 	private UUID id;
-	
+
 	@Column(name = "servicio")
 	private String nombreServicio;
-	
+
 	@Column(name = "duracion")
 	private int duracionEstimada;
-	
+
 	@Column(name = "descripcion")
 	private String descripcion;
-	
+
 	//TODO: APLICAR CAMBIOS A DURACIÓN ESTIMADA
 	ServicioEntity(){
 		setId(UUIDHelper.getDefault());
@@ -35,23 +35,23 @@ public final class ServicioEntity {
 	}
 
 
-	public ServicioEntity(final UUID id, final String nombreServicio, final 
+	public ServicioEntity(final UUID id, final String nombreServicio, final
 			int duracionEstimada, final String descripcion) {
 		setId(id);
 		setNombreServicio(nombreServicio);
 		setDuracionEstimada(duracionEstimada);
 		setDescripcion(descripcion);
 	}
-	
+
 	public static final ServicioEntity create() {
 		return new ServicioEntity();
 	}
-	
-	public static final ServicioEntity create(final UUID id, final String nombreServicio, final 
+
+	public static final ServicioEntity create(final UUID id, final String nombreServicio, final
 			int duracionEstimada, final String descripcion) {
 		return new ServicioEntity(id, nombreServicio, duracionEstimada, descripcion);
 	}
-	
+
 	//TODO: CAMBIAR EL 0 por el helper
 	public static final ServicioEntity create(final UUID id) {
 		return new ServicioEntity(id, TextHelper.EMPTY, 0, TextHelper.EMPTY);
@@ -103,11 +103,11 @@ public final class ServicioEntity {
 		return "ServicioEntity [id=" + id + ", nombreServicio=" + nombreServicio + ", duracionEstimada="
 				+ duracionEstimada + ", descripcion=" + descripcion + "]";
 	}
-	
-	
-	
-	
 
-	
+
+
+
+
+
 
 }

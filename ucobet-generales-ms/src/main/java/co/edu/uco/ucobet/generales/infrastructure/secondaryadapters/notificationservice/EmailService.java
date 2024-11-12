@@ -4,6 +4,8 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
+import co.edu.uco.ucobet.generales.crosscutting.helpers.TextHelper;
+
 @Service
 public class EmailService {
     
@@ -14,10 +16,10 @@ public class EmailService {
     }
     
     public void notificarNuevaCiudad(String nombreCiudad) {
-        SimpleMailMessage mensaje = new SimpleMailMessage();
-        mensaje.setTo("jmposadao22@gmail.com");
-        mensaje.setSubject("Nueva Ciudad Registrada en UCOBet");
-        mensaje.setText("Se ha registrado exitosamente la ciudad: " + nombreCiudad + " en el sistema.");
+    	SimpleMailMessage mensaje = new SimpleMailMessage();
+        mensaje.setTo(TextHelper.EMAIL_RECIPIENT);
+        mensaje.setSubject(TextHelper.EMAIL_SUBJECT);
+        mensaje.setText(TextHelper.buildEmailBody(nombreCiudad));
         
         emailSender.send(mensaje);
     }

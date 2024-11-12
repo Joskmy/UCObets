@@ -1,1 +1,0 @@
-package co.edu.uco.bodyhealty.servicios.domain.servicio.rules;

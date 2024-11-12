@@ -7,6 +7,9 @@ import co.edu.uco.ucobet.generales.application.secondaryports.mapper.city.CityEn
 import co.edu.uco.ucobet.generales.application.secondaryports.repository.CityRepository;
 import co.edu.uco.ucobet.generales.application.usecase.city.RegisterNewCity;
 import co.edu.uco.ucobet.generales.application.usecase.city.RegisterNewCityRulesValidator;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.ApplicationUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 import co.edu.uco.ucobet.generales.domain.city.CityDomain;
 import co.edu.uco.ucobet.generales.infrastructure.secondaryadapters.notificationservice.EmailService;
 
@@ -36,9 +39,10 @@ public final class RegisterNewCityImpl implements RegisterNewCity {
 		cityRepository.save(cityEntity);
 		try {
 			emailService.notificarNuevaCiudad(domain.getName());
-            System.out.println("Correo de notificación enviado exitosamente para la ciudad: " + domain.getName());
-        } catch (Exception e) {
-            System.err.println("Error al enviar el correo de notificación: " + e.getMessage());
+			final var userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00021);
+			System.out.println(userMessage);
+        } catch (ApplicationUcobetException exception) {
+        	throw ApplicationUcobetException.create(MessageCatalogStrategy.getContentMessage(MessageCode.M00022));
         }
 
 	}

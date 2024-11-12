@@ -14,10 +14,12 @@ import co.edu.uco.ucobet.generales.crosscutting.helpers.UUIDHelper;
 
 @RestController
 @RequestMapping("/general/api/v1/cities")
-@CrossOrigin(origins = {"http://localhost:3000"}, 
-methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS},
-allowedHeaders = "*",
-allowCredentials = "false")
+@CrossOrigin(
+    origins = {"https://localhost:3000", "http://localhost:3000"}, 
+    methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.OPTIONS},
+    allowedHeaders = {"Origin", "Content-Type", "Accept", "Authorization"},
+    allowCredentials = "true"
+)
 public class RegisterNewCityController {
 
 	private final RegisterNewCityInteractor registerNewCityInteractor;

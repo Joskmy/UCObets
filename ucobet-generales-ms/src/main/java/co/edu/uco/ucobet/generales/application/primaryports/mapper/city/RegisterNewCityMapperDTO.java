@@ -24,7 +24,6 @@ public interface RegisterNewCityMapperDTO {
 
     @Named("mapToStateDomain")
     default StateDomain mapToStateDomain(UUID stateId) {
-        System.out.println("Creando StateDomain con stateId: " + stateId);
         
         return new StateDomain(stateId, "Hola", null);
     }

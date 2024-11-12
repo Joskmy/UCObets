@@ -26,9 +26,7 @@ public final class RegisterNewCityStateRulesValidatorImp implements RegisterNewC
 
 	@Override
 	public void validate(final UUID stateId) {
-		System.out.println("Validando idIsNotNullRule");
 		idIsNotNullRule.validate(stateId);
-		System.out.println("Validando doesExistsRule");
 		doesExistsRule.validate(stateId);
 
 	}

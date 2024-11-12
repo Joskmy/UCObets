@@ -9,14 +9,14 @@ public final class ServicioDomain extends Domain {
 	private String nombreServicio;
 	private int duracionEstimada;
 	private String descripcion;
-	public ServicioDomain(final UUID id, final String nombreServicio, 
+	public ServicioDomain(final UUID id, final String nombreServicio,
 			final int duracionEstimada, final String descripcion) {
 		super(id);
 		setNombreServicio(nombreServicio);
 		setDuracionEstimada(duracionEstimada);
 		setDescripcion(descripcion);
 		System.out.println("ServicioDomain creado -> id: " + id + ", nombreServicio: " + nombreServicio + ", duracionEstimada: " + duracionEstimada + ", descripcion: " + descripcion);
-		
+
 	}
 	public String getNombreServicio() {
 		return nombreServicio;
@@ -41,7 +41,7 @@ public final class ServicioDomain extends Domain {
 		return "ServicioDomain [id=" + getId() +  ", nombreServicio=" + nombreServicio + ", duracionEstimada=" + duracionEstimada
 				+ ", descripcion=" + descripcion + "]";
 	}
-	
-	
+
+
 
 }

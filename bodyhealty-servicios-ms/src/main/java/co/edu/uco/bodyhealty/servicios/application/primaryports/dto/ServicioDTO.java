@@ -1,12 +1,19 @@
 package co.edu.uco.bodyhealty.servicios.application.primaryports.dto;
 
+import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.NumericHelper;
 import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.TextHelper;
 
 public final class ServicioDTO {
 	private String nombreServicio;
 	private int duracionEstimada;
 	private String descripcion;
-
+	
+	public ServicioDTO() {
+        setNombreServicio(TextHelper.EMPTY);
+        setDuracionEstimada(NumericHelper.ZERO);
+        setDescripcion(TextHelper.EMPTY);	
+    }
+	
 	public ServicioDTO(final String nombreServicio, final int duracionEstimada, final String descripcion) {
 		setNombreServicio(nombreServicio);
 		setDuracionEstimada(duracionEstimada);
@@ -23,7 +30,7 @@ public final class ServicioDTO {
 	}
 
 	private void setNombreServicio(final String nombreServicio) {
-		this.nombreServicio = TextHelper.applyTrim(nombreServicio);
+		this.nombreServicio = TextHelper.applyTrim(nombreServicio).toLowerCase();
 	}
 
 	public int getDuracionEstimada() {
@@ -39,7 +46,7 @@ public final class ServicioDTO {
 	}
 
 	private void setDescripcion(final String descripcion) {
-		this.descripcion = TextHelper.applyTrim(descripcion);
+		this.descripcion = TextHelper.applyTrim(descripcion).toLowerCase();
 	}
 
 	@Override
@@ -47,6 +54,6 @@ public final class ServicioDTO {
 		return "ServicioDTO [nombreServicio=" + nombreServicio + ", duracionEstimada=" + duracionEstimada
 				+ ", descripcion=" + descripcion + "]";
 	}
-	
+
 
 }

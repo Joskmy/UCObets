@@ -15,7 +15,6 @@ public class MessageCatalogExternalService implements MessageCatalog {
 	@Override
 	public final void initialize() {
 		messages.clear();
-		// TODO: FALTAN LOS MENSAJES
 	}
 
 	@Override

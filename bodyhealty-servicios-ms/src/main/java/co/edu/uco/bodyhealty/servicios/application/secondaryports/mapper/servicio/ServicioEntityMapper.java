@@ -3,7 +3,6 @@ package co.edu.uco.bodyhealty.servicios.application.secondaryports.mapper.servic
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-
 import co.edu.uco.bodyhealty.servicios.application.secondaryports.entity.ServicioEntity;
 import co.edu.uco.bodyhealty.servicios.domain.servicio.ServicioDomain;
 

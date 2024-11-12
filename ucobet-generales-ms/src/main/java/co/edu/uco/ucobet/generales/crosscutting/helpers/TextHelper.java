@@ -4,6 +4,12 @@ public class TextHelper {
 
 	public static final String EMPTY = "";
 	public static final String UNDERLINE = "_";
+	
+	public static final String EMAIL_RECIPIENT = "jmposadao22@gmail.com";
+    public static final String EMAIL_SUBJECT = "Nueva Ciudad Registrada en UCOBet";
+    public static final String EMAIL_BODY_PREFIX = "Se ha registrado exitosamente la ciudad: ";
+    public static final String EMAIL_BODY_SUFFIX = " en el sistema.";
+    
 	private TextHelper() {
 
 	}
@@ -44,5 +50,9 @@ public class TextHelper {
 
 	    return sb.toString();
 	}
+	
+	public static String buildEmailBody(final String cityName) {
+        return concatenate(EMAIL_BODY_PREFIX, cityName, EMAIL_BODY_SUFFIX);
+    }
 
 }

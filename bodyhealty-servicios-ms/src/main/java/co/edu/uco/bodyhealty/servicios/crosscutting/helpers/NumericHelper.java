@@ -1,6 +1,8 @@
 package co.edu.uco.bodyhealty.servicios.crosscutting.helpers;
 
 public final class NumericHelper {
+	
+	public static final int ZERO = 0;
 
 	private NumericHelper() {
 
@@ -34,5 +36,19 @@ public final class NumericHelper {
 			final boolean includeInitialLimit, final boolean includeFinalLimit) {
 		return (includeInitialLimit ? isGreatOrEqual(number, initialLimit) : isGreat(number, initialLimit))
 				&& (includeFinalLimit ? isLessOrEqual(number, finalLimit) : isLess(number, finalLimit));
+	}
+	
+	public static final int convertToInt(final String value) {
+
+		try {
+			return Integer.valueOf(value);
+		} catch (Exception exception) {
+			return 0;
+		}
+
+	}
+	
+	public static final <T extends Number> boolean isNull(final T number) {
+	    return ObjectHelper.isNull(number);
 	}
 }

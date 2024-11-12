@@ -1,6 +1,8 @@
 package co.edu.uco.ucobet.generales.domain.state.exceptions;
 
 import co.edu.uco.ucobet.generales.crosscutting.exceptions.customs.RuleUcobetException;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.MessageCatalogStrategy;
+import co.edu.uco.ucobet.generales.crosscutting.exceptions.message.enums.MessageCode;
 
 public class StateIdIsNullException extends RuleUcobetException {
 
@@ -11,7 +13,7 @@ public class StateIdIsNullException extends RuleUcobetException {
     }
 
     public static final StateIdIsNullException create() {
-        var userMessage = "El id del estado no puede ser nulo...";
+    	var userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00024);
         return new StateIdIsNullException(userMessage);
     }
 	
