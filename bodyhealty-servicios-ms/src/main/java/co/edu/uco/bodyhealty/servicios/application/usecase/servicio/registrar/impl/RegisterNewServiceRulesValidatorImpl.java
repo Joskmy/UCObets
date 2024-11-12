@@ -35,7 +35,7 @@ public class RegisterNewServiceRulesValidatorImpl implements RegisterNewServiceR
 	@Override
 	public void validate(ServicioDomain data) {
 		serviceIdRulesValidator.validate(data);
-		//serviceNameRulesValidator.validate(data);
+		serviceNameRulesValidator.validate(data);
 		serviceDurationRulesValidator.validate(data);
 		serviceDescriptionRulesValidator.validate(data);
 

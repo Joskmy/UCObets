@@ -17,7 +17,7 @@ public class RuleBodyHealtyException extends BodyHealtyException {
 		return new RuleBodyHealtyException(userMessage, TechnicalMessage, rootException);
 	}
 
-	public static final RuleBodyHealtyException create(final String userMessage) {
+	public static  RuleBodyHealtyException create(final String userMessage) {
 		return new RuleBodyHealtyException(userMessage, userMessage, new Exception());
 	}
 

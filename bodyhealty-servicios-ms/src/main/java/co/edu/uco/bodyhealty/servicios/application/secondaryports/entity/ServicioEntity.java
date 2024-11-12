@@ -2,6 +2,7 @@ package co.edu.uco.bodyhealty.servicios.application.secondaryports.entity;
 
 import java.util.UUID;
 
+import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.NumericHelper;
 import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.TextHelper;
 import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.UUIDHelper;
 import jakarta.persistence.Column;
@@ -26,11 +27,10 @@ public final class ServicioEntity {
 	@Column(name = "descripcion")
 	private String descripcion;
 
-	//TODO: APLICAR CAMBIOS A DURACIÓN ESTIMADA
 	ServicioEntity(){
 		setId(UUIDHelper.getDefault());
 		setNombreServicio(TextHelper.EMPTY);
-		setDuracionEstimada(duracionEstimada);
+		setDuracionEstimada(NumericHelper.ZERO);
 		setDescripcion(TextHelper.EMPTY);
 	}
 
@@ -52,9 +52,8 @@ public final class ServicioEntity {
 		return new ServicioEntity(id, nombreServicio, duracionEstimada, descripcion);
 	}
 
-	//TODO: CAMBIAR EL 0 por el helper
 	public static final ServicioEntity create(final UUID id) {
-		return new ServicioEntity(id, TextHelper.EMPTY, 0, TextHelper.EMPTY);
+		return new ServicioEntity(id, TextHelper.EMPTY, NumericHelper.ZERO, TextHelper.EMPTY);
 	}
 
 

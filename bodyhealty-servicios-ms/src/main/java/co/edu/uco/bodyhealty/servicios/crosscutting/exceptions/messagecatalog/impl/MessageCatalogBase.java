@@ -55,8 +55,17 @@ public final class MessageCatalogBase implements MessageCatalog {
 				new Message(MessageCode.M00019, "Ha ocurrido un error buscando el servicio con id {1} en el sistema..."));
 		messages.put(MessageCode.M00020.getIdentifier(), new Message(MessageCode.M00020,
 				"Ha ocurrido un error inesperado cuando se estaba buscando el servicio en la base de datos en la parte de  ServicioRepositoryCustomImpl"));
-		messages.put(MessageCode.M00020.getIdentifier(), new Message(MessageCode.M00021,
+		messages.put(MessageCode.M00021.getIdentifier(), new Message(MessageCode.M00021,
 				"El ID ${1] No tiene el formato válido (Formato para UUID)"));
+		messages.put(MessageCode.M00026.getIdentifier(), new Message(MessageCode.M00026,
+				"El nombre del servicio no puede estar vacio..."));
+		messages.put(MessageCode.M00027.getIdentifier(), new Message(MessageCode.M00027,
+				"El nombre del servicio ${1} ya existe en el sistema"));
+		messages.put(MessageCode.M00028.getIdentifier(), new Message(MessageCode.M00028,
+				"El nombre del servicio no tiene un formato válido. Solo se permiten letras (con o sin tilde), y espacios."));
+		messages.put(MessageCode.M00029.getIdentifier(), new Message(MessageCode.M00029,
+				"El nombre del servicio no puede tener más de 50 carácteres"));
+		
 
 	}
 

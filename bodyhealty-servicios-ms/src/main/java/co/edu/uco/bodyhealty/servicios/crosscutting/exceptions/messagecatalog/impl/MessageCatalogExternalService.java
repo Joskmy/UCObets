@@ -15,7 +15,14 @@ public class MessageCatalogExternalService implements MessageCatalog {
 	@Override
 	public final void initialize() {
 		messages.clear();
-		// TODO: FALTAN LOS MENSAJES personalizados externos
+		messages.put(MessageCode.M00022.getIdentifier(), new Message(MessageCode.M00022,
+				"Ha ocurrido un error inesperado en la transacciòn elaborada..."));
+		messages.put(MessageCode.M00023.getIdentifier(), new Message(MessageCode.M00023,
+				"Error al consultar por el Filtro Correspondiente a la Acciòn en la capa de ServicioRepositoryCustom..."));
+		messages.put(MessageCode.M00024.getIdentifier(), new Message(MessageCode.M00025,
+				"Error al verificar la existencia del servicio con nombre: {1}..."));
+		messages.put(MessageCode.M00025.getIdentifier(), new Message(MessageCode.M00025,
+				"Se presentó un error técnico al intentar verificar si existe un servicio con el nombre: {1}..."));
 	}
 
 	@Override
