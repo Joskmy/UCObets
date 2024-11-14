@@ -70,7 +70,7 @@ public class GetServiceController {
             List<ServicioDTO> servicios = getServiceInteractor.executeByFilter(filtro);
             
             if (servicios.isEmpty()) {
-                servicioResponse.getMensajes().add("No se encontraron datos en la base de datos aplicando el filtro");
+                servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00040));
             } else {
                 servicioResponse.getDatos().addAll(servicios);
                 servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00036));

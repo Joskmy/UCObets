@@ -14,23 +14,18 @@ public class GetServiceDurationRulesValidatorImpl implements GetServiceDurationR
 	
 	private ServiceDurationIsMultipleOfMinuteRule serviceDurationIsMultipleOfMinuteRule;
 	private ServiceDurationIsNotNullRule serviceDurationIsNotNullRule;
-	private ServiceDurationIsValidMinRule serviceDurationIsValidMinRule;
 
-
-	
 	public GetServiceDurationRulesValidatorImpl(
 			final ServiceDurationIsMultipleOfMinuteRule serviceDurationIsMultipleOfMinuteRule,
 			final ServiceDurationIsNotNullRule serviceDurationIsNotNullRule,
 			final ServiceDurationIsValidMinRule serviceDurationIsValidMinRule) {
 		this.serviceDurationIsMultipleOfMinuteRule = serviceDurationIsMultipleOfMinuteRule;
 		this.serviceDurationIsNotNullRule = serviceDurationIsNotNullRule;
-		this.serviceDurationIsValidMinRule = serviceDurationIsValidMinRule;
 	}
 
 	@Override
 	public void validate(ServicioDomain data) {
 		serviceDurationIsNotNullRule.validate(data);
-		serviceDurationIsValidMinRule.validate(data);
 		serviceDurationIsMultipleOfMinuteRule.validate(data);		
 	}
 

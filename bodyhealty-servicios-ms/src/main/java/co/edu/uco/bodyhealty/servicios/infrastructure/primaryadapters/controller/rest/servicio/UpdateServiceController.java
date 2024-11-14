@@ -45,7 +45,7 @@ public class UpdateServiceController {
 		} catch (final Exception exception) {
 			exception.printStackTrace();
 			httpStatusResponse = HttpStatus.INTERNAL_SERVER_ERROR;
-			servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00015));
+			servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00030));
 		}
 
 		return new ResponseEntity<>(servicioResponse, httpStatusResponse);

@@ -48,7 +48,7 @@ public class DeleteServiceController {
         } catch (final Exception exception) {
         	exception.printStackTrace();
             httpStatusResponse = HttpStatus.INTERNAL_SERVER_ERROR;
-            servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00015));
+            servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00035));
         }
 
         return new ResponseEntity<>(servicioResponse, httpStatusResponse);

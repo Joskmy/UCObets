@@ -2,40 +2,34 @@ package co.edu.uco.bodyhealty.servicios.application.usecase.servicio.consultar.i
 
 import org.springframework.stereotype.Service;
 
-import co.edu.uco.bodyhealty.servicios.application.usecase.servicio.actualizar.UpdateServiceDescriptionRulesValidator;
-import co.edu.uco.bodyhealty.servicios.application.usecase.servicio.actualizar.UpdateServiceDurationRulesValidator;
-import co.edu.uco.bodyhealty.servicios.application.usecase.servicio.actualizar.UpdateServiceIdRulesValidator;
-import co.edu.uco.bodyhealty.servicios.application.usecase.servicio.actualizar.UpdateServiceNameRulesValidator;
+import co.edu.uco.bodyhealty.servicios.application.usecase.servicio.consultar.GetServiceDurationRulesValidator;
+import co.edu.uco.bodyhealty.servicios.application.usecase.servicio.consultar.GetServiceNameRulesValidator;
 import co.edu.uco.bodyhealty.servicios.application.usecase.servicio.consultar.GetServiceRulesValidator;
+import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.NumericHelper;
+import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.TextHelper;
 import co.edu.uco.bodyhealty.servicios.domain.servicio.ServicioDomain;
 
 @Service
 public class GetServiceRulesValidatorImpl implements GetServiceRulesValidator {
 
-	private UpdateServiceIdRulesValidator serviceIdRulesValidator;
-	private UpdateServiceNameRulesValidator serviceNameRulesValidator;
-	private UpdateServiceDurationRulesValidator serviceDurationRulesValidator;
-	private UpdateServiceDescriptionRulesValidator serviceDescriptionRulesValidator;
+	private GetServiceNameRulesValidator serviceNameRulesValidator;
+	private GetServiceDurationRulesValidator serviceDurationRulesValidator;
 
-	public GetServiceRulesValidatorImpl(final UpdateServiceIdRulesValidator serviceIdRulesValidator,
-			final UpdateServiceNameRulesValidator serviceNameRulesValidator,
-			final UpdateServiceDurationRulesValidator serviceDurationRulesValidator,
-			final UpdateServiceDescriptionRulesValidator serviceDescriptionRulesValidator) {
-		this.serviceIdRulesValidator = serviceIdRulesValidator;
+	public GetServiceRulesValidatorImpl(final GetServiceNameRulesValidator serviceNameRulesValidator,
+			final GetServiceDurationRulesValidator serviceDurationRulesValidator) {
 		this.serviceNameRulesValidator = serviceNameRulesValidator;
 		this.serviceDurationRulesValidator = serviceDurationRulesValidator;
-		this.serviceDescriptionRulesValidator = serviceDescriptionRulesValidator;
 	}
 
 	@Override
-	public void validate(ServicioDomain data) {
-		serviceNameRulesValidator.validate(data);
-		System.out.println("2");
-		serviceDurationRulesValidator.validate(data);
-		System.out.println("3");
-		serviceDescriptionRulesValidator.validate(data);
-		System.out.println("SALIOOOO");
-
-	}
+    public void validate(ServicioDomain data) {
+        if (!TextHelper.isEmpty(data.getNombreServicio())) {
+            serviceNameRulesValidator.validate(data);
+        }
+        
+        if (data.getDuracionEstimada() > NumericHelper.ZERO) {
+            serviceDurationRulesValidator.validate(data);
+        }
+    }
 
 }

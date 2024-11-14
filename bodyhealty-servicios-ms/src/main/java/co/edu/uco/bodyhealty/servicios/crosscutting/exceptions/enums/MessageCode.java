@@ -43,7 +43,9 @@ public enum MessageCode {
 	M00036(MessageType.USER, MessageCategory.SUCCESS, "00036", true),
 	M00037(MessageType.USER, MessageCategory.ERROR, "00037", true),
 	M00038(MessageType.USER, MessageCategory.ERROR, "00038", true),
-	M00039(MessageType.USER, MessageCategory.ERROR, "00039", true);
+	M00039(MessageType.USER, MessageCategory.ERROR, "00039", true),
+	M00040(MessageType.USER, MessageCategory.INFORMATION, "00040", true);
+	
 	
 
 	private MessageType type;

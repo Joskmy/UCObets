@@ -83,10 +83,10 @@ public final class MessageCatalogBase implements MessageCatalog {
 				"Ha ocurrido un error inesperado durante la solicitud de datos..."));
 		messages.put(MessageCode.M00038.getIdentifier(), new Message(MessageCode.M00038,
 				"Ha ocurrido un error durante la consulta de los datos con id ${1}..."));
-		messages.put(MessageCode.M00038.getIdentifier(), new Message(MessageCode.M00038,
-				"Ha ocurrido un error durante la consulta de los datos con id ${1}..."));
-		messages.put(MessageCode.M00038.getIdentifier(), new Message(MessageCode.M00038,
+		messages.put(MessageCode.M00039.getIdentifier(), new Message(MessageCode.M00039,
 				"Ha ocurrido un error durante la consulta de los datos con el filtro indicado..."));
+		messages.put(MessageCode.M00040.getIdentifier(), new Message(MessageCode.M00040,
+				"No se encontraron datos en la base de datos aplicando el filtro..."));
 	
 	}
 

@@ -48,7 +48,7 @@ public class GetServiceInteractorImpl implements GetServiceInteractor {
                     .map(ServicioDTOmapper.INSTANCE::toDTO)
                     .collect(Collectors.toList());
         } catch (Exception ex) {
-            final String userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00022);
+            final String userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00039);
             throw ApplicationBodyHealtyException.create(userMessage, userMessage, ex);
         }
     }
