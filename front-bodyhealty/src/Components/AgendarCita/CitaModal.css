@@ -1,0 +1,16 @@
+.cita-modal {
+    min-width: 400px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .cita-modal {
+      min-width: 300px;
+    }
+  }

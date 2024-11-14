@@ -1,0 +1,32 @@
+.servicios {
+  padding: 2rem;
+  margin-left: 250px;
+}
+
+.servicios-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.servicios h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Espacio para futuros filtros y tabla */
+.filtros-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.tabla-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
