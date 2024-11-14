@@ -12,12 +12,12 @@ import co.edu.uco.bodyhealty.servicios.application.secondaryports.repository.Ser
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.custom.RepositoryBodyHealtyException;
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.enums.MessageCode;
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.messagecatalog.MessageCatalogStrategy;
-import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.NumericHelper;
-import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.ObjectHelper;
 import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.TextHelper;
-import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.UUIDHelper;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
 
 
 @Repository("servicioRepositoryImpl")
@@ -32,42 +32,40 @@ public class ServicioRepositoryCustomImpl implements ServicioRepositoryCustom {
     
     
     @Override
-	public List<ServicioEntity> findByFilter(final ServicioEntity filter) {
-		try {
-			var criteriaBuilder = entityManager.getCriteriaBuilder();
-			var query = criteriaBuilder.createQuery(ServicioEntity.class);
-			var result = query.from(ServicioEntity.class);
+    public List<ServicioEntity> findByFilter(ServicioEntity filter) {
+        try {
+            CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+            CriteriaQuery<ServicioEntity> query = criteriaBuilder.createQuery(ServicioEntity.class);
+            Root<ServicioEntity> root = query.from(ServicioEntity.class);
+            List<Predicate> predicates = new ArrayList<>();
 
-			var predicates = new ArrayList<>();
+            if (!TextHelper.isEmpty(filter.getNombreServicio())) {
+                predicates.add(criteriaBuilder.like(
+                    criteriaBuilder.lower(root.get("nombreServicio")), 
+                    "%" + filter.getNombreServicio().toLowerCase() + "%"
+                ));
+            }
 
-			if (!ObjectHelper.isNull(filter)) {
-				if (!UUIDHelper.isDefault(filter.getId())) {
-					predicates.add(criteriaBuilder.equal(result.get("id"), filter.getId()));
-				}
+            if (filter.getDuracionEstimada() > 0) {
+                predicates.add(criteriaBuilder.equal(
+                    root.get("duracionEstimada"), 
+                    filter.getDuracionEstimada()
+                ));
+            }
 
-				if (!TextHelper.isEmpty(filter.getNombreServicio())) {
-					predicates.add(criteriaBuilder.equal(result.get("nombreServicio"), filter.getNombreServicio()));
-				}
-				
-				if (!TextHelper.isEmpty(filter.getDescripcion())) {
-					predicates.add(criteriaBuilder.equal(result.get("descripcion"), filter.getNombreServicio()));
-				}
-				
-				if (!NumericHelper.isNull(filter.getDuracionEstimada())) {
-					predicates.add(criteriaBuilder.equal(result.get("duracionEstimada"), filter.getNombreServicio()));
-				}
-			}
+            query.select(root);
+            
+            if (!predicates.isEmpty()) {
+                query.where(criteriaBuilder.and(predicates.toArray(new Predicate[0])));
+            }
 
-			query.select(result).where(criteriaBuilder.and(predicates.toArray(new Predicate[0])));
-			return entityManager.createQuery(query).getResultList();
-
-		} catch (final Exception exception) {
-			final var messageUser = MessageCatalogStrategy.getContentMessage(MessageCode.M00022);
-			final var messageTechnical = MessageCatalogStrategy.getContentMessage(MessageCode.M00023);
-			throw RepositoryBodyHealtyException.create(messageUser, messageTechnical, exception);
-		}
-	}
-
+            return entityManager.createQuery(query).getResultList();
+        } catch (Exception ex) {
+            final var messageUser = MessageCatalogStrategy.getContentMessage(MessageCode.M00022);
+            final var messageTechnical = MessageCatalogStrategy.getContentMessage(MessageCode.M00023);
+            throw RepositoryBodyHealtyException.create(messageUser, messageTechnical, ex);
+        }
+    }
     
 
     @Override

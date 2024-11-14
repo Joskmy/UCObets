@@ -18,6 +18,20 @@ public interface ServicioDTOmapper {
     
     @Mapping(target = "id", source = "id")
     ServicioDomain toDomainWithId(UUID id, ServicioDTO dto);
+    
+    @Mapping(target = "nombreServicio", ignore = true)
+    @Mapping(target = "duracionEstimada", constant = "0")
+    @Mapping(target = "descripcion", ignore = true)
+    ServicioDomain toDomainOnlyId(UUID id);
 
+    @Mapping(source = "nombreServicio", target = "nombreServicio")
+    @Mapping(source = "duracionEstimada", target = "duracionEstimada")
+    @Mapping(source = "descripcion", target = "descripcion")
     ServicioDTO toDTO(ServicioDomain domain);
+    
+    @Mapping(target = "id", ignore = true)
+    @Mapping(source = "nombreServicio", target = "nombreServicio")
+    @Mapping(source = "duracionEstimada", target = "duracionEstimada")
+    @Mapping(source = "descripcion", target = "descripcion")
+    ServicioDomain toDomainForFilter(ServicioDTO dto);
 }

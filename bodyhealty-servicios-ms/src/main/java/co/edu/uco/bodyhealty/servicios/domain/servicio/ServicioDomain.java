@@ -2,6 +2,8 @@ package co.edu.uco.bodyhealty.servicios.domain.servicio;
 
 import java.util.UUID;
 
+import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.NumericHelper;
+import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.TextHelper;
 import co.edu.uco.bodyhealty.servicios.domain.Domain;
 
 public final class ServicioDomain extends Domain {
@@ -18,6 +20,15 @@ public final class ServicioDomain extends Domain {
 		System.out.println("ServicioDomain creado -> id: " + id + ", nombreServicio: " + nombreServicio + ", duracionEstimada: " + duracionEstimada + ", descripcion: " + descripcion);
 
 	}
+	
+	public static ServicioDomain build(UUID id) {
+	    return new ServicioDomain(id, TextHelper.EMPTY, NumericHelper.ZERO, TextHelper.EMPTY);
+	}
+	
+	public static ServicioDomain buildForQuery(UUID id) {
+	    return new ServicioDomain(id, TextHelper.EMPTY, NumericHelper.ZERO, TextHelper.EMPTY);
+	}
+	
 	public String getNombreServicio() {
 		return nombreServicio;
 	}

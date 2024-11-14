@@ -1,5 +1,7 @@
 package co.edu.uco.bodyhealty.servicios.infrastructure.primaryadapters.controller.rest.servicio;
 
+import java.util.UUID;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,14 +26,14 @@ public class UpdateServiceController {
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<ServicioResponse> actualizarPorId(@PathVariable String id, @RequestBody ServicioDTO dto) {
+	public ResponseEntity<ServicioResponse> actualizarPorId(@PathVariable UUID id, @RequestBody ServicioDTO dto) {
 		ServicioResponse servicioResponse = ServicioResponse.build();
 		HttpStatus httpStatusResponse = HttpStatus.OK;
 
 		try {
 			updateServiceInteractor.execute(id, dto);
 			servicioResponse.getDatos().add(dto);
-			servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00032, id));
+			servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00032, id.toString()));
 		} catch (final RuleBodyHealtyException exception) {
 			exception.printStackTrace();
 			httpStatusResponse = HttpStatus.BAD_REQUEST;

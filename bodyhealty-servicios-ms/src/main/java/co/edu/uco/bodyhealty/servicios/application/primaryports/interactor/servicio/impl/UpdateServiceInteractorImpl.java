@@ -24,10 +24,9 @@ public class UpdateServiceInteractorImpl implements UpdateServiceInteractor {
 	}
 
 	@Override
-	public void execute(final String id, final ServicioDTO data) {
+	public void execute(final UUID id, final ServicioDTO data) {
 		try {
-			UUID uuid = UUID.fromString(id);
-			ServicioDomain servicioDomain = ServicioDTOmapper.INSTANCE.toDomainWithId(uuid, data);
+			ServicioDomain servicioDomain = ServicioDTOmapper.INSTANCE.toDomainWithId(id, data);
 			updateService.execute(servicioDomain);
 		} catch (RuleBodyHealtyException ex) {
 			throw ex;

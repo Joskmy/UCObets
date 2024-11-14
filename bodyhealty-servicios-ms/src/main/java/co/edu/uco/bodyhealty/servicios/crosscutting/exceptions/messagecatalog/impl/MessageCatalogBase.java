@@ -73,7 +73,21 @@ public final class MessageCatalogBase implements MessageCatalog {
 				"Se ha modificado con éxito el Servicio con ID ${1} en el sistema..."));
 		messages.put(MessageCode.M00033.getIdentifier(), new Message(MessageCode.M00031,
 				"Se ha modificado con éxito el Servicio con nombre ${1} en el sistema..."));
-		
+		messages.put(MessageCode.M00034.getIdentifier(), new Message(MessageCode.M00034,
+				"Se ha eliminado el servicio con id  ${1} del sistema..."));
+		messages.put(MessageCode.M00035.getIdentifier(), new Message(MessageCode.M00035,
+				"Ha ocurrido un error inesperado durante la eliminación del servicio con id ${1}..."));
+		messages.put(MessageCode.M00036.getIdentifier(), new Message(MessageCode.M00036,
+				"La solicitud de datos se realizò de manera correcta..."));
+		messages.put(MessageCode.M00037.getIdentifier(), new Message(MessageCode.M00037,
+				"Ha ocurrido un error inesperado durante la solicitud de datos..."));
+		messages.put(MessageCode.M00038.getIdentifier(), new Message(MessageCode.M00038,
+				"Ha ocurrido un error durante la consulta de los datos con id ${1}..."));
+		messages.put(MessageCode.M00038.getIdentifier(), new Message(MessageCode.M00038,
+				"Ha ocurrido un error durante la consulta de los datos con id ${1}..."));
+		messages.put(MessageCode.M00038.getIdentifier(), new Message(MessageCode.M00038,
+				"Ha ocurrido un error durante la consulta de los datos con el filtro indicado..."));
+	
 	}
 
 	@Override

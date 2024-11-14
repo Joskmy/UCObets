@@ -30,7 +30,7 @@ public final class ServicioDTO {
 		return nombreServicio;
 	}
 
-	private void setNombreServicio(final String nombreServicio) {
+	public void setNombreServicio(final String nombreServicio) {
 		this.nombreServicio = TextHelper.applyTrim(nombreServicio).toLowerCase();
 	}
 
@@ -38,7 +38,7 @@ public final class ServicioDTO {
 		return duracionEstimada;
 	}
 
-	private void setDuracionEstimada(final int duracionEstimada) {
+	public void setDuracionEstimada(final int duracionEstimada) {
 		this.duracionEstimada = duracionEstimada;
 	}
 
@@ -46,7 +46,7 @@ public final class ServicioDTO {
 		return descripcion;
 	}
 
-	private void setDescripcion(final String descripcion) {
+	public void setDescripcion(final String descripcion) {
 		this.descripcion = TextHelper.applyTrim(descripcion).toLowerCase();
 	}
 
