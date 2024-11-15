@@ -9445,3 +9445,409 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2024-11-14 01:27:52,397 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-11-14 01:27:52,409 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-11-14 01:27:52,417 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 10:38:52,357 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-14 11:00:51,955 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:00:51,986 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 11:00:51,999 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:01:04,650 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:01:04,671 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 11:01:04,685 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:01:08,783 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:01:08,801 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 11:01:08,815 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:01:14,049 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:01:14,060 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 11:01:14,071 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:05:43,514 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 11:05:43,524 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2024-11-14 11:05:43,554 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:06:15,094 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:06:15,140 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:08:21,094 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:08:21,114 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:09:31,413 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:09:31,435 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:13:28,493 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:13:28,601 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:15:26,519 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:15:26,546 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:16:15,250 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:16:15,306 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:22:48,923 [Worker-44: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 11:22:51,215 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:22:51,255 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:23:01,419 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:23:01,442 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:24:24,103 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:24:24,200 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:24:24,224 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\jposa\Documents\Softaware2v2\ucobet-generales-ms\src\test\resources
+2024-11-14 11:24:28,753 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:24:28,767 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:24:28,776 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\jposa\Documents\Softaware2v2\ucobet-generales-ms\src\test\resources
+2024-11-14 11:24:59,603 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:24:59,613 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:24:59,623 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\jposa\Documents\Softaware2v2\ucobet-generales-ms\src\test\resources
+2024-11-14 11:25:23,077 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:25:23,099 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:25:31,506 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:25:31,524 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:25:50,140 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:25:50,154 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:25:50,169 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\jposa\Documents\Softaware2v2\ucobet-generales-ms\src\test\resources
+2024-11-14 11:26:17,252 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:26:17,273 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:26:29,493 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:26:29,507 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:26:50,308 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:26:50,331 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:27:06,444 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:27:06,462 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:27:12,927 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:27:12,942 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:27:21,622 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:27:21,637 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:27:28,035 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:27:28,051 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:27:33,489 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:27:33,504 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:27:52,810 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:27:52,825 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:29:48,614 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:29:48,629 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:31:13,443 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:31:13,460 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:31:17,143 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:31:17,165 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:31:30,079 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:31:30,094 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:32:20,234 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:32:20,253 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:40:38,214 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:40:38,234 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:41:02,722 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:41:02,740 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:42:20,579 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:42:20,600 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:42:45,722 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:42:45,739 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:43:27,574 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:43:27,589 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:43:47,574 [Worker-57: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:43:47,597 [Worker-57: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:44:02,739 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:44:02,760 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:44:35,382 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:44:35,403 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:45:05,049 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:45:05,064 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:46:34,926 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:46:34,975 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:46:48,818 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:46:48,867 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:46:51,647 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:46:51,661 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:47:01,146 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:47:01,172 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:47:11,320 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:47:11,341 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:48:32,739 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:48:32,759 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:48:35,826 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:48:35,842 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:48:43,799 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:48:43,812 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:50:12,303 [Worker-49: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 11:50:14,124 [Worker-49: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 11:50:17,246 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 11:50:17,264 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 11:50:17,271 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 11:50:17,273 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 11:50:17,277 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 11:50:19,868 [Worker-49: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 3,00 sec, update config takes 2,00 sec 
+2024-11-14 11:50:24,226 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:50:24,266 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:50:26,718 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:50:26,764 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:52:28,404 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:52:28,425 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:52:46,399 [Worker-59: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:52:46,420 [Worker-59: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:53:52,740 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:53:52,753 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:54:00,440 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:54:00,461 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:54:18,107 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:54:18,121 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:54:22,717 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:54:22,733 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:54:27,213 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:54:27,234 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:54:39,957 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:54:39,980 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:54:54,652 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:54:54,675 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:55:45,761 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:55:45,780 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:55:45,795 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:56:59,185 [Worker-67: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 11:57:01,368 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 11:57:01,373 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 11:57:01,386 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:57:03,472 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:57:03,522 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-11-14 11:57:03,549 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:57:08,425 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:57:08,435 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-11-14 11:57:08,561 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:57:16,360 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:57:16,371 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-11-14 11:57:16,381 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:58:15,149 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:58:15,163 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-11-14 11:58:15,180 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:58:32,833 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:58:32,848 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-11-14 11:58:32,864 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:58:37,748 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:58:37,759 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-11-14 11:58:37,771 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 11:58:40,188 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 11:58:40,200 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2024-11-14 11:58:40,212 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:08:10,442 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:08:10,461 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:08:24,565 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:08:24,580 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:11:05,738 [Worker-74: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:11:08,033 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:11:08,066 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:11:12,497 [Worker-74: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:11:15,252 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:11:15,292 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:11:23,622 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:11:23,670 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:11:32,115 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:11:32,162 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:11:40,590 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:11:40,616 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:11:47,017 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:11:47,031 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:11:54,405 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:11:54,424 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:13:23,020 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:13:23,035 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:13:28,746 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:13:28,759 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:14:02,980 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:14:02,995 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:14:19,241 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:14:19,260 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:19:33,427 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:19:33,450 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:21:28,119 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:21:28,134 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:21:28,963 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:21:28,978 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:21:41,031 [Worker-86: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:21:43,124 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:21:43,158 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:21:45,381 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:21:45,397 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:23:02,507 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:23:02,523 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:23:15,767 [Worker-87: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:23:15,781 [Worker-87: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:23:39,750 [Worker-72: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 12:23:41,388 [Worker-72: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:23:43,313 [Worker-72: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 12:23:43,315 [Worker-72: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:23:43,317 [Worker-72: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:23:43,317 [Worker-72: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 12:23:43,319 [Worker-72: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 12:23:44,679 [Worker-72: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 3,00 sec, update config takes 0,00 sec 
+2024-11-14 12:32:35,822 [Worker-93: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:32:35,861 [Worker-93: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:36:03,656 [Worker-103: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:36:03,669 [Worker-103: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:42:51,740 [Worker-105: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:42:51,756 [Worker-105: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:44:42,952 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-14 12:45:34,513 [Worker-4: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:45:34,577 [Worker-4: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:46:49,374 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:46:49,392 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:47:09,587 [Worker-10: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:47:09,620 [Worker-10: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:47:51,122 [Worker-14: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:47:51,149 [Worker-14: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:49:03,514 [Worker-15: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:49:03,532 [Worker-15: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:49:44,583 [Worker-1: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:49:44,603 [Worker-1: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:49:44,615 [Worker-1: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:50:49,997 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 12:50:52,873 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:50:55,288 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 12:50:55,294 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:50:55,296 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:50:55,298 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 12:50:55,301 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 12:50:56,755 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 4,00 sec, update config takes 1,00 sec 
+2024-11-14 12:51:20,532 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:51:22,660 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:51:22,686 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:51:22,700 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:51:23,008 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 12:51:25,133 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:51:27,076 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 12:51:27,078 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:51:27,080 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:51:27,081 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 12:51:27,083 [Worker-5: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 12:51:28,381 [Worker-5: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 3,00 sec, update config takes 1,00 sec 
+2024-11-14 12:51:28,393 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 12:51:29,559 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:51:32,662 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 12:51:32,665 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:51:32,667 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:51:32,668 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 12:51:32,671 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 12:51:34,012 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 3,00 sec, update config takes 1,00 sec 
+2024-11-14 12:52:45,016 [Worker-17: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:52:45,075 [Worker-17: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:52:45,090 [Worker-17: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:53:34,034 [Worker-14: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:53:35,832 [Worker-14: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 12:53:35,835 [Worker-14: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 12:53:35,846 [Worker-14: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:53:36,251 [Worker-12: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 12:53:38,400 [Worker-12: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:53:40,265 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 12:53:40,267 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:53:40,269 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:53:40,270 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 12:53:40,272 [Worker-12: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 12:53:41,562 [Worker-12: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 3,00 sec, update config takes 1,00 sec 
+2024-11-14 12:53:41,576 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 12:53:42,678 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 12:53:44,428 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 12:53:44,430 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:53:44,433 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 12:53:44,434 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 12:53:44,437 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 12:53:45,402 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 2,00 sec, update config takes 0,00 sec 
+2024-11-14 12:55:17,573 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:55:17,608 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:55:17,625 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:56:01,040 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 12:56:01,043 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 12:56:01,054 [Worker-7: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 12:57:35,977 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-14 12:58:35,542 [Worker-17: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 12:58:35,593 [Worker-17: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 12:58:35,615 [Worker-17: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:03:56,083 [Worker-24: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:03:56,101 [Worker-24: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 13:03:56,115 [Worker-24: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:05:01,751 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 13:05:01,756 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:05:01,782 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:06:05,964 [Worker-22: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:06:05,980 [Worker-22: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 13:06:05,991 [Worker-22: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:06:36,234 [Worker-21: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:06:36,253 [Worker-21: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 13:06:36,270 [Worker-21: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:10:46,388 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-14 13:10:49,105 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 13:10:51,850 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/main/java
+2024-11-14 13:10:51,858 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 13:10:51,861 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/main/resources
+2024-11-14 13:10:51,863 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bodyhealty-servicios-ms/src/test/java
+2024-11-14 13:10:51,867 [Worker-27: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bodyhealty-servicios-ms/src/test/resources
+2024-11-14 13:10:53,843 [Worker-27: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 4,00 sec, update config takes 2,00 sec 
+2024-11-14 13:14:27,134 [Worker-26: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:14:27,176 [Worker-26: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:14:27,201 [Worker-26: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:16:07,895 [Worker-28: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:16:07,909 [Worker-28: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:16:07,926 [Worker-28: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:20:09,368 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:20:09,380 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:20:09,399 [Worker-8: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:21:58,644 [Worker-33: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:21:58,659 [Worker-33: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:21:58,677 [Worker-33: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:24:03,670 [Worker-34: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:24:03,689 [Worker-34: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 13:24:03,703 [Worker-34: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:26:41,743 [Worker-36: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:26:41,760 [Worker-36: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:26:41,775 [Worker-36: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:30:05,338 [Worker-42: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:30:05,367 [Worker-42: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:30:05,394 [Worker-42: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:31:09,620 [Worker-36: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:31:09,625 [Worker-36: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:31:09,639 [Worker-36: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:32:13,669 [Worker-43: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:32:13,673 [Worker-43: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:32:13,688 [Worker-43: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:33:53,736 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:33:53,748 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:33:53,759 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:48:25,780 [Worker-43: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:48:25,790 [Worker-43: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:48:25,801 [Worker-43: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:53:03,310 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: co.edu.uco.bodyhealty:bodyhealty-servicios-ms:0.0.1-SNAPSHOT @ C:\Users\jposa\Documents\Softaware2v2\bodyhealty-servicios-ms\pom.xml.
+2024-11-14 13:53:05,519 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:53:05,554 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:53:05,569 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:53:53,047 [Worker-53: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:53:53,060 [Worker-53: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:53:53,068 [Worker-53: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 13:55:22,110 [Worker-56: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:55:22,122 [Worker-56: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 13:55:22,133 [Worker-56: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 14:08:21,440 [Worker-58: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 14:08:21,458 [Worker-58: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 14:08:21,472 [Worker-58: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 14:32:54,209 [Worker-63: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 14:32:54,250 [Worker-63: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 14:32:54,270 [Worker-63: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 14:33:34,986 [Worker-68: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 14:33:35,008 [Worker-68: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-14 14:33:35,018 [Worker-68: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 18:12:10,181 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-11-14 18:45:04,067 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-14 19:48:14,374 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-14 20:19:20,214 [Worker-32: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:19:20,292 [Worker-32: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:19:20,319 [Worker-32: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 20:21:33,752 [Worker-23: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:21:33,764 [Worker-23: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:21:33,776 [Worker-23: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 20:23:23,508 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:23:23,523 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:23:23,537 [Worker-40: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 20:39:01,288 [Worker-54: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:39:01,302 [Worker-54: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 20:39:01,319 [Worker-54: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 21:02:11,766 [Worker-67: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 21:02:11,776 [Worker-67: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 21:02:11,786 [Worker-67: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-14 21:02:16,346 [Worker-67: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 21:02:16,386 [Worker-67: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 21:02:16,438 [Worker-67: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\jposa\Documents\Softaware2v2\ucobet-generales-ms\src\test\resources
+2024-11-14 23:53:33,741 [Worker-118: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 23:53:33,940 [Worker-118: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-14 23:53:33,971 [Worker-118: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-15 00:13:18,477 [Worker-126: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 00:13:18,508 [Worker-126: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 00:13:18,527 [Worker-126: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-15 00:14:26,374 [Worker-125: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 00:14:26,423 [Worker-125: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 00:14:26,439 [Worker-125: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-15 00:14:50,959 [Worker-123: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-15 00:14:50,990 [Worker-123: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-15 00:14:51,007 [Worker-123: Launching bodyhealty-servicios-ms - BodyhealtyServiciosMsApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes

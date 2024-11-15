@@ -1,53 +1,43 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/general/api/v1/services';
+const BASE_URL = 'https://localhost:8443/general/api/v1/services';
+
+const axiosInstance = axios.create({
+  baseURL: BASE_URL,
+  auth: { 
+    username: 'user', 
+    password: '123456' 
+  },
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  // Configuración para ignorar certificados SSL en desarrollo
+  validateStatus: function (status) {
+    return status >= 200 && status < 500;
+  }
+});
 
 export const ServiciosService = {
   getServicios: async () => {
     try {
-      const response = await axios.get(BASE_URL);
+      const response = await axiosInstance.get('/', {
+        // Configuración específica para esta petición si es necesaria
+      });
+      console.log('Respuesta completa:', response);
       return response.data.datos;
     } catch (error) {
-      throw new Error('Error al obtener servicios');
+      console.error('Error en getServicios:', error);
+      throw error;
     }
   },
 
   createServicio: async (servicio) => {
     try {
-      const response = await axios.post(BASE_URL, servicio);
+      const response = await axiosInstance.post('/', servicio);
       return response.data;
     } catch (error) {
-      throw new Error('Error al crear servicio');
-    }
-  },
-
-  updateServicio: async (id, servicio) => {
-    try {
-      const response = await axios.put(`${BASE_URL}/${id}`, servicio);
-      return response.data;
-    } catch (error) {
-      throw new Error('Error al actualizar servicio');
-    }
-  },
-
-  deleteServicio: async (id) => {
-    try {
-      if (!id) {
-        throw new Error('ID no válido');
-      }
-      console.log('ID a eliminar:', id); // Para debugging
-      const response = await axios.delete(`${BASE_URL}/${id}`);
-      if (response.status === 200 || response.status === 204) {
-        return true;
-      }
-      throw new Error(`Error al eliminar: ${response.status}`);
-    } catch (error) {
-      console.error('Error en deleteServicio:', error);
-      if (error.response) {
-        console.error('Response data:', error.response.data);
-        console.error('Response status:', error.response.status);
-      }
+      console.error('Error en createServicio:', error);
       throw error;
     }
   }
-}; 
+};

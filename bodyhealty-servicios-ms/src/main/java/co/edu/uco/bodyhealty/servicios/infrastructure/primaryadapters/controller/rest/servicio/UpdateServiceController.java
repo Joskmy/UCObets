@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.*;
 
 import co.edu.uco.bodyhealty.servicios.application.primaryports.dto.ServicioDTO;
 import co.edu.uco.bodyhealty.servicios.application.primaryports.interactor.servicio.UpdateServiceInteractor;
-import co.edu.uco.bodyhealty.servicios.application.responses.impl.ServicioResponse;
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.custom.ApplicationBodyHealtyException;
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.custom.RuleBodyHealtyException;
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.enums.MessageCode;
 import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.messagecatalog.MessageCatalogStrategy;
+import co.edu.uco.bodyhealty.servicios.infrastructure.primaryadapters.responses.impl.ServicioResponse;
 
 @RestController
 @RequestMapping("/general/api/v1/services")
-@CrossOrigin(origins = { "http://localhost:4200", "http://localhost:3000", "http://localhost:8080" })
+
 public class UpdateServiceController {
 
 	private UpdateServiceInteractor updateServiceInteractor;
@@ -33,7 +33,8 @@ public class UpdateServiceController {
 		try {
 			updateServiceInteractor.execute(id, dto);
 			servicioResponse.getDatos().add(dto);
-			servicioResponse.getMensajes().add(MessageCatalogStrategy.getContentMessage(MessageCode.M00032, id.toString()));
+			servicioResponse.getMensajes()
+					.add(MessageCatalogStrategy.getContentMessage(MessageCode.M00032, id.toString()));
 		} catch (final RuleBodyHealtyException exception) {
 			exception.printStackTrace();
 			httpStatusResponse = HttpStatus.BAD_REQUEST;

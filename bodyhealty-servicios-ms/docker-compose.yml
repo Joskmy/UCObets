@@ -1,0 +1,25 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8443:8443"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/Servicios
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=12345
+    depends_on:
+      - db
+  
+  db:
+    image: postgres:latest
+    ports:
+      - "5433:5432"  # Cambiado de 5432 a 5433
+    environment:
+      - POSTGRES_DB=Servicios
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
