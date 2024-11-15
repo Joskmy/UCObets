@@ -9826,3 +9826,157 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 0
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 00:30:35.543
+!MESSAGE Classpath changed for project: ucobet-generales-ms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 00:30:35.548
+!MESSAGE Boot project REMOVED: ucobet-generales-ms
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 00:30:35.645
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 00:30:35.650
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 00:30:35.655
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 00:30:35.658
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 00:30:35.705
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 00:30:35.726
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 00:30:40.281
+!MESSAGE Classpath changed for project: bodyhealty-servicios-ms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 00:30:40.284
+!MESSAGE Boot project REMOVED: bodyhealty-servicios-ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 00:30:45.547
+!MESSAGE LanguageServer not initialized within 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:891)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.capabilitiesComply(LanguageServiceAccessor.java:204)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:422)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:409)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerProjectExecutor.getServers(LanguageServers.java:341)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:431)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:171)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:147)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:29)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 00:30:45.548
+!MESSAGE LanguageServer not initialized within 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:891)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.capabilitiesComply(LanguageServiceAccessor.java:204)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:422)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:409)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerProjectExecutor.getServers(LanguageServers.java:341)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:431)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:171)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:147)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:29)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 00:30:47.552
+!MESSAGE executing callback sts4.classpath.FhajxzGy FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-11-15 00:30:47.554
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:31)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 00:30:55.561
+!MESSAGE LanguageServer not initialized within 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:891)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.capabilitiesComply(LanguageServiceAccessor.java:204)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:422)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:409)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerProjectExecutor.getServers(LanguageServers.java:341)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:431)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:171)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:147)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:29)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 00:30:57.559
+!MESSAGE LanguageServer not initialized within 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:891)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.capabilitiesComply(LanguageServiceAccessor.java:204)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:422)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:409)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerProjectExecutor.getServers(LanguageServers.java:341)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:431)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:171)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:147)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:29)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 00:30:59.562
+!MESSAGE executing callback sts4.classpath.FhajxzGy FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-11-15 00:30:59.565
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:31)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 00:31:40.665
+!MESSAGE Classpath changed for project: bodyhealty-servicios-ms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 00:31:40.668
+!MESSAGE Boot project ADDED: bodyhealty-servicios-ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 00:31:40.934
+!MESSAGE executing callback sts4.classpath.FhajxzGy FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-11-15 00:31:40.936
+!MESSAGE No language server has registered to handle command 'sts4.classpath.FhajxzGy'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.FhajxzGy'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.lambda$1(LSP4ECommandExecutor.java:32)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:32)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
