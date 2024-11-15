@@ -14,15 +14,6 @@ const ServiciosTable = ({
     return matchesName && matchesDuration;
   });
 
-  const handleDelete = (servicio) => {
-    console.log('Servicio a eliminar:', servicio); // Para debugging
-    if (servicio && servicio.id) { // Aquí está el problema, debería ser idServicio
-      onDelete(servicio.id);
-    } else {
-      console.error('Servicio no tiene id:', servicio);
-    }
-  };
-
   return (
     <table>
       <thead>
@@ -36,7 +27,7 @@ const ServiciosTable = ({
       </thead>
       <tbody>
         {filteredServicios.map((servicio, index) => (
-          <tr key={servicio.idServicio}>
+          <tr key={servicio.id}>
             <td>{index + 1}</td>
             <td>{servicio.nombreServicio}</td>
             <td>{servicio.duracionEstimada} min</td>
@@ -50,7 +41,7 @@ const ServiciosTable = ({
               </button>
               <button 
                 className="action-btn delete" 
-                onClick={() => handleDelete(servicio)}
+                onClick={() => onDelete(servicio.id)}
               >
                 ❌
               </button>

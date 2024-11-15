@@ -1,24 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import { ServiciosService } from '../Servicios/ServiciosService';
+import React, { useState } from 'react';
+import axios from 'axios';
 
 function HistorialMedico() {
-  const [estado, setEstado] = useState('Iniciando...');
-  const [servicios, setServicios] = useState([]);
+  const [estado, setEstado] = useState('No conectado');
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    probarConexion();
-  }, []);
+  const axiosInstance = axios.create({
+    baseURL: 'http://localhost:8080/general/api/v1/services',
+    auth: { 
+      username: 'user', 
+      password: '123456' 
+    },
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
 
+  // Probar conexión GET
   const probarConexion = async () => {
     try {
-      setEstado('Conectando con la API...');
-      const response = await ServiciosService.getServicios();
-      setServicios(response);
+      setEstado('Conectando...');
+      console.log('Intentando conexión GET...');
+      const response = await axiosInstance.get('/?nombre=e');
+      console.log('Respuesta:', response.data);
       setEstado('Conexión exitosa');
       setError(null);
     } catch (err) {
-      console.error('Error de conexión:', err);
+      console.error('Error completo:', err);
       setEstado('Error de conexión');
       setError(err.message);
     }
@@ -26,13 +34,15 @@ function HistorialMedico() {
 
   return (
     <div className="container mt-4">
-      <h2>Historial Médico - Prueba de Conexión</h2>
+      <h2>Prueba de Conexión API</h2>
       
       <div className="card mt-3">
         <div className="card-body">
           <h5 className="card-title">Estado de la conexión</h5>
           <p className="card-text">
-            Estado actual: <span className="badge bg-success">{estado}</span>
+            Estado: <span className={`badge ${estado.includes('exitosa') ? 'bg-success' : 'bg-warning'}`}>
+              {estado}
+            </span>
           </p>
           {error && (
             <div className="alert alert-danger">
@@ -42,42 +52,12 @@ function HistorialMedico() {
         </div>
       </div>
 
-      {servicios.length > 0 && (
-        <div className="card mt-3">
-          <div className="card-body">
-            <h5 className="card-title">Servicios Disponibles ({servicios.length})</h5>
-            <div className="table-responsive">
-              <table className="table table-hover">
-                <thead>
-                  <tr>
-                    <th>Nombre del Servicio</th>
-                    <th>Duración (min)</th>
-                    <th>Descripción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {servicios.map((servicio, index) => (
-                    <tr key={index}>
-                      <td>{servicio.nombre}</td>
-                      <td>{servicio.duracion || 'No especificada'}</td>
-                      <td>{servicio.descripcion || '-'}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <div className="mt-3">
-        <button 
-          className="btn btn-primary me-2"
-          onClick={probarConexion}
-        >
-          <i className="fas fa-sync-alt"></i> Actualizar Lista
-        </button>
-      </div>
+      <button 
+        className="btn btn-primary mt-3"
+        onClick={probarConexion}
+      >
+        Probar Conexión
+      </button>
     </div>
   );
 }

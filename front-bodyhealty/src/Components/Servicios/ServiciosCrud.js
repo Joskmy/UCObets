@@ -22,7 +22,7 @@ const ServiciosCrud = () => {
       const data = await ServiciosService.getServicios();
       setServicios(data);
     } catch (error) {
-      setMensaje('Error al cargar los servicios');
+      setMensaje(error.message);
     }
   };
 
@@ -60,27 +60,19 @@ const ServiciosCrud = () => {
 
   const handleDelete = async (id) => {
     try {
-      console.log('Intentando eliminar servicio con ID:', id); // Para debugging
-      
       if (!id) {
         setMensaje('Error: ID de servicio no válido');
         return;
       }
-  
+
       const confirmDelete = window.confirm('¿Está seguro de eliminar este servicio?');
-      
       if (confirmDelete) {
-        const result = await ServiciosService.deleteServicio(id);
-        if (result) {
-          setMensaje('Servicio eliminado correctamente');
-          await fetchServicios(); // Recargar la lista
-        } else {
-          setMensaje('No se pudo eliminar el servicio');
-        }
+        const responseMessage = await ServiciosService.deleteServicio(id);
+        setMensaje(responseMessage);
+        await fetchServicios();
       }
     } catch (error) {
-      console.error('Error completo al eliminar:', error);
-      setMensaje(`Error al eliminar el servicio: ${error.message}`);
+      setMensaje(error.message);
     }
   };
 
@@ -97,18 +89,19 @@ const ServiciosCrud = () => {
         descripcion: descripcion
       };
 
+      let responseMessage;
+
       if (editingId) {
-        await ServiciosService.updateServicio(editingId, servicioData);
-        setMensaje('Servicio actualizado correctamente');
+        responseMessage = await ServiciosService.updateServicio(editingId, servicioData);
       } else {
-        await ServiciosService.createServicio(servicioData);
-        setMensaje('Servicio creado correctamente');
+        responseMessage = await ServiciosService.createServicio(servicioData);
       }
 
+      setMensaje(responseMessage);
       resetForm();
       fetchServicios();
     } catch (error) {
-      setMensaje('Error al procesar el servicio');
+      setMensaje(error.message);
     }
   };
 
@@ -138,10 +131,7 @@ const ServiciosCrud = () => {
       ) : (
         <div className="table-container">
           <div className="table-header">
-            <button 
-              onClick={handleNewClick} 
-              className="nuevo-button"
-            >
+            <button onClick={handleNewClick} className="nuevo-button">
               Nuevo
             </button>
             <div className="search-filters">
@@ -158,7 +148,7 @@ const ServiciosCrud = () => {
                 className="search-input"
               >
                 <option value="">Todas las duraciones</option>
-                {Array.from({ length: 20 }, (_, i) => (i + 1) * 15).map(minutos => (
+                {Array.from({ length: 20 }, (_, i) => (i + 1) * 15).map((minutos) => (
                   <option key={minutos} value={minutos}>
                     {minutos} minutos
                   </option>
