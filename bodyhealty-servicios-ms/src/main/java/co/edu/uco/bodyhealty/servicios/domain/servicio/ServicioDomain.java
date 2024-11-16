@@ -17,8 +17,6 @@ public final class ServicioDomain extends Domain {
 		setNombreServicio(nombreServicio);
 		setDuracionEstimada(duracionEstimada);
 		setDescripcion(descripcion);
-		System.out.println("ServicioDomain creado -> id: " + id + ", nombreServicio: " + nombreServicio + ", duracionEstimada: " + duracionEstimada + ", descripcion: " + descripcion);
-
 	}
 	
 	public static ServicioDomain build(UUID id) {
@@ -47,12 +45,5 @@ public final class ServicioDomain extends Domain {
 	private void setDescripcion(final String descripcion) {
 		this.descripcion = descripcion;
 	}
-	@Override
-	public String toString() {
-		return "ServicioDomain [id=" + getId() +  ", nombreServicio=" + nombreServicio + ", duracionEstimada=" + duracionEstimada
-				+ ", descripcion=" + descripcion + "]";
-	}
-
-
-
+	
 }

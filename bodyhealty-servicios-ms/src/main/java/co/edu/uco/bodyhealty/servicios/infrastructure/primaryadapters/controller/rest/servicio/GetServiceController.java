@@ -19,6 +19,7 @@ import co.edu.uco.bodyhealty.servicios.crosscutting.exceptions.messagecatalog.Me
 import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.NumericHelper;
 import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.ObjectHelper;
 import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.TextHelper;
+import co.edu.uco.bodyhealty.servicios.crosscutting.helpers.UUIDHelper;
 import co.edu.uco.bodyhealty.servicios.infrastructure.primaryadapters.responses.impl.ServicioResponse;
 
 @RestController
@@ -59,11 +60,12 @@ public class GetServiceController {
 		HttpStatus httpStatusResponse = HttpStatus.OK;
 
 		try {
+			UUID idfiltro = UUIDHelper.generate();
 			String nombreFiltro = TextHelper.applyTrim(nombre);
 			int duracionFiltro = ObjectHelper.getDefault(duracion, NumericHelper.ZERO);
 			String descripcionFiltro = TextHelper.EMPTY;
 
-			ServicioDTO filtro = ServicioDTO.create(nombreFiltro, duracionFiltro, descripcionFiltro);
+			ServicioDTO filtro = ServicioDTO.create(idfiltro, nombreFiltro, duracionFiltro, descripcionFiltro);
 
 			List<ServicioDTO> servicios = getServiceInteractor.executeByFilter(filtro);
 

@@ -15,7 +15,6 @@ public class ServiceIdDoesNotExistsException extends RuleBodyHealtyException {
     }
 
     public static final ServiceIdDoesNotExistsException create(UUID id) {
-    	System.out.println("HOLAAAAAAAAA");
         final var userMessage = MessageCatalogStrategy.getContentMessage(MessageCode.M00015, id.toString());
         return new ServiceIdDoesNotExistsException(userMessage);
     }

@@ -32,10 +32,11 @@ public class RegisterNewServiceController {
 		HttpStatus httpStatusResponse = HttpStatus.OK;
 
 		try {
+			String nombreOriginal = dto.getNombreServicio();
 			registerNewServiceInteractor.execute(dto);
 			servicioResponse.getDatos().add(dto);
 			servicioResponse.getMensajes()
-					.add(MessageCatalogStrategy.getContentMessage(MessageCode.M00007, dto.getNombreServicio()));
+					.add(MessageCatalogStrategy.getContentMessage(MessageCode.M00007, nombreOriginal));
 
 		} catch (final ApplicationBodyHealtyException exception) {
 			exception.printStackTrace();

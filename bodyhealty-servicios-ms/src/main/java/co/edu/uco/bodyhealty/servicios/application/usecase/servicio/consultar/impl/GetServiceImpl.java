@@ -42,9 +42,7 @@ public class GetServiceImpl implements GetService {
     public List<ServicioDomain> executeByFilter(ServicioDomain domain) {
 		getServiceRulesValidator.validate(domain);
         ServicioEntity filter = ServicioEntityMapper.INSTANCE.toEntity(domain);
-        System.out.println("Entrará en los custom buscando" + filter);
         List<ServicioEntity> resultados = servicioRepository.findByFilter(filter);
-        System.out.println("RESULTADO: " + resultados);
         if (resultados.isEmpty()) {
             return Collections.emptyList();
         }

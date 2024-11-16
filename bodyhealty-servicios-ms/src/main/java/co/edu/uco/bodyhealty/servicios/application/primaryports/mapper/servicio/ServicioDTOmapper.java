@@ -13,7 +13,10 @@ import co.edu.uco.bodyhealty.servicios.domain.servicio.ServicioDomain;
 public interface ServicioDTOmapper {
     ServicioDTOmapper INSTANCE = Mappers.getMapper(ServicioDTOmapper.class);
 
-    @Mapping(target = "id", expression = "java(UUIDHelper.generate())")
+    @Mapping(source = "id", target = "id")
+    @Mapping(source = "nombreServicio", target = "nombreServicio")
+    @Mapping(source = "duracionEstimada", target = "duracionEstimada")
+    @Mapping(source = "descripcion", target = "descripcion")
     ServicioDomain toDomain(ServicioDTO dto);
     
     @Mapping(target = "id", source = "id")

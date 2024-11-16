@@ -29,7 +29,6 @@ public class GetServiceInteractorImpl implements GetServiceInteractor {
         try {
             ServicioDomain domain = ServicioDomain.buildForQuery(id);
             ServicioDomain resultado = getService.executeById(domain);
-            System.out.println("el resultado es:" + resultado);
             return ServicioDTOmapper.INSTANCE.toDTO(resultado);
         } catch (RuleBodyHealtyException ex) {
             throw ex;

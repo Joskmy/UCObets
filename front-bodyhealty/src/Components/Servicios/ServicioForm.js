@@ -2,6 +2,8 @@ import React from 'react';
 import './ServiciosCrud.css';
 
 const ServicioForm = ({
+  id,
+  setId,
   nombre,
   duracion,
   descripcion,
@@ -14,20 +16,34 @@ const ServicioForm = ({
 }) => {
   const isEditing = formMode === 'edit';
   
-  return (
+    return (
     <div className="form-container">
       <div className="form-header">
         <h2>{isEditing ? 'Actualizar Servicio' : 'Registrar Servicio'}</h2>
       </div>
       <div className="form-content">
+        {!isEditing && (
+          <div className="input-group">
+            <label>ID del servicio *</label>
+            <input
+              type="text"
+              placeholder="Ingrese el ID del servicio"
+              value={id}
+              onChange={(e) => setId(e.target.value)}
+              className="form-input"
+              required
+            />
+          </div>
+        )}
         <div className="input-group">
-          <label>Nombre del servicio</label>
+          <label>Nombre del servicio *</label>
           <input
             type="text"
             placeholder="Ingrese el nombre del servicio"
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             className="form-input"
+            required
           />
         </div>
         <div className="input-group">
@@ -65,7 +81,7 @@ const ServicioForm = ({
         </div>
       </div>
     </div>
-  );
+    );
 };
 
 export default ServicioForm; 

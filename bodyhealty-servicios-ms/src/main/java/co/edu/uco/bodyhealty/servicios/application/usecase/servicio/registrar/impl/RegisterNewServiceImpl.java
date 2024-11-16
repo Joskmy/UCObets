@@ -36,17 +36,6 @@ public class RegisterNewServiceImpl implements RegisterNewService {
 		final ServicioEntity servicioEntity = ServicioEntityMapper.INSTANCE.toEntity(domain);
 		servicioRepository.save(servicioEntity);
 
-
-		// Notificar al administrador sobre la creación de la nueva ciudad
-		// : ¿Cómo? Notification Building Block
-
-		// Tenga en cuenta que:
-		// 1. El correo del administrador está en un lugar parametrizado (Parameters
-		// Building Block)
-		// 2. El asunto del correo está en un lugar parametrizado (Parameters Building
-		// Block)
-		// 3. El cuerpo del correo está en un lugar parametrizado (Parameters Building
-		// Block)
 	}
 
 

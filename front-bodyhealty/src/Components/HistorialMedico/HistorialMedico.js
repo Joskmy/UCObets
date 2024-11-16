@@ -1,63 +1,55 @@
-import React, { useState } from 'react';
 import axios from 'axios';
+import { useState } from 'react';
 
 function HistorialMedico() {
-  const [estado, setEstado] = useState('No conectado');
+  const [respuesta, setRespuesta] = useState(null);
   const [error, setError] = useState(null);
 
-  const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080/general/api/v1/services',
-    auth: { 
-      username: 'user', 
-      password: '123456' 
-    },
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
+  // Usa la misma URL que funciona en Postman
+  const API_URL = 'https://7ga2e9l7b7.execute-api.us-east-1.amazonaws.com/pruebapost/general/api/v1/services';
 
-  // Probar conexión GET
-  const probarConexion = async () => {
+  const obtenerServicios = async () => {
     try {
-      setEstado('Conectando...');
-      console.log('Intentando conexión GET...');
-      const response = await axiosInstance.get('/?nombre=e');
-      console.log('Respuesta:', response.data);
-      setEstado('Conexión exitosa');
+      console.log('Iniciando petición a:', API_URL);
+      
+      const response = await axios.get(API_URL, {
+        headers: {
+          'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true'
+        }
+      });
+
+      console.log('Respuesta exitosa:', response.data);
+      setRespuesta(response.data);
       setError(null);
     } catch (err) {
       console.error('Error completo:', err);
-      setEstado('Error de conexión');
-      setError(err.message);
+      console.error('Estado de la respuesta:', err.response?.status);
+      console.error('Datos del error:', err.response?.data);
+      setError(`Error: ${err.message}`);
+      setRespuesta(null);
     }
   };
 
   return (
-    <div className="container mt-4">
-      <h2>Prueba de Conexión API</h2>
+    <div>
+      <h2>Prueba de Conexión</h2>
+      <button onClick={obtenerServicios}>Probar Conexión</button>
       
-      <div className="card mt-3">
-        <div className="card-body">
-          <h5 className="card-title">Estado de la conexión</h5>
-          <p className="card-text">
-            Estado: <span className={`badge ${estado.includes('exitosa') ? 'bg-success' : 'bg-warning'}`}>
-              {estado}
-            </span>
-          </p>
-          {error && (
-            <div className="alert alert-danger">
-              Error: {error}
-            </div>
-          )}
+      {error && (
+        <div style={{color: 'red', margin: '10px 0'}}>
+          {error}
         </div>
-      </div>
-
-      <button 
-        className="btn btn-primary mt-3"
-        onClick={probarConexion}
-      >
-        Probar Conexión
-      </button>
+      )}
+      
+      {respuesta && (
+        <div style={{margin: '20px 0'}}>
+          <h3>Conexión exitosa:</h3>
+          <pre style={{whiteSpace: 'pre-wrap'}}>
+            {JSON.stringify(respuesta, null, 2)}
+          </pre>
+        </div>
+      )}
     </div>
   );
 }

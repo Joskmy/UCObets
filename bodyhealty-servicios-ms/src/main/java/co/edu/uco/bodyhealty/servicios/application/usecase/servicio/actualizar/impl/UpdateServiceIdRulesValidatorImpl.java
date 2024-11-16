@@ -15,9 +15,9 @@ public class UpdateServiceIdRulesValidatorImpl implements UpdateServiceIdRulesVa
 	private ServiceIdDoesExistsRule serviceIdDoesExistsRule;
 	private ServiceIdTypeIsValidRule serviceIdTypeIsValidRule;
 	private ServiceIdIsNotNullRule serviceIdIsNotNullRule;
-	
-	
-	public UpdateServiceIdRulesValidatorImpl(final ServiceIdDoesExistsRule serviceIdDoesExistsRule, final ServiceIdTypeIsValidRule serviceIdTypeIsValidRule,
+
+	public UpdateServiceIdRulesValidatorImpl(final ServiceIdDoesExistsRule serviceIdDoesExistsRule,
+			final ServiceIdTypeIsValidRule serviceIdTypeIsValidRule,
 			final ServiceIdIsNotNullRule serviceIdIsNotNullRule) {
 		this.serviceIdDoesExistsRule = serviceIdDoesExistsRule;
 		this.serviceIdTypeIsValidRule = serviceIdTypeIsValidRule;
@@ -26,13 +26,10 @@ public class UpdateServiceIdRulesValidatorImpl implements UpdateServiceIdRulesVa
 
 	@Override
 	public void validate(final ServicioDomain data) {
-		System.out.println("Entroo");
 		serviceIdIsNotNullRule.validate(data.getId());
 		serviceIdTypeIsValidRule.validate(data.getId());
 		serviceIdDoesExistsRule.validate(data);
-		System.out.println("SALIO");
 
-		
 	}
-	
+
 }

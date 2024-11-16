@@ -114,16 +114,18 @@ public final class MessageCatalogBase implements MessageCatalog {
 			var techMessage = getMessageContent(MessageCode.M00003, code.getIdentifier());
 			throw RuleBodyHealtyException.create(userMessage, techMessage);
 		}
+		
+	    Message originalMessage = messages.get(code.getIdentifier());
+	    Message newMessage = new Message(originalMessage.getCode(), originalMessage.getContent());
 
-		Message message = messages.get(code.getIdentifier());
 		if (parameters != null && parameters.length > 0) {
-			String content = message.getContent();
+			String content = newMessage.getContent();
 			for (int i = 0; i < parameters.length; i++) {
 				content = content.replace("${" + (i + 1) + "}", parameters[i]);
 			}
-			message.setContent(content);
+			newMessage.setContent(content);
 		}
 
-		return message;
+		return newMessage;
 	}
 }

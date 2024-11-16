@@ -30,13 +30,9 @@ public class UpdateServiceRulesValidatorImpl implements UpdateServiceRulesValida
 	@Override
 	public void validate(ServicioDomain data) {
 		serviceIdRulesValidator.validate(data);
-		System.out.println("1");
 		serviceNameRulesValidator.validate(data);
-		System.out.println("2");
 		serviceDurationRulesValidator.validate(data);
-		System.out.println("3");
 		serviceDescriptionRulesValidator.validate(data);
-		System.out.println("SALIOOOO");
 
 	}
 

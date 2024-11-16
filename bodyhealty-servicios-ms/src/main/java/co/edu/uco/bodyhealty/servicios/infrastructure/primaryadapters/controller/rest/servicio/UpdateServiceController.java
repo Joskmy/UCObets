@@ -31,6 +31,7 @@ public class UpdateServiceController {
 		HttpStatus httpStatusResponse = HttpStatus.OK;
 
 		try {
+			dto.setId(id);
 			updateServiceInteractor.execute(id, dto);
 			servicioResponse.getDatos().add(dto);
 			servicioResponse.getMensajes()

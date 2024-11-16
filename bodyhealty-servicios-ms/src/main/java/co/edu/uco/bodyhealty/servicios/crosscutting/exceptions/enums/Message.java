@@ -21,7 +21,7 @@ public final class Message {
 		this.content = content;
 	}
 
-	private final MessageCode getCode() {
+	public final MessageCode getCode() {
 		return code;
 	}
 

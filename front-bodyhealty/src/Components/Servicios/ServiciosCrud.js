@@ -16,18 +16,46 @@ const ServiciosCrud = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchDuration, setSearchDuration] = useState('');
   const [formMode, setFormMode] = useState('register');
+  const [id, setId] = useState('');
 
   const fetchServicios = async () => {
     try {
       const data = await ServiciosService.getServicios();
-      setServicios(data);
+      console.log('Datos recibidos en fetchServicios:', data);
+      if (Array.isArray(data)) {
+        setServicios(data);
+      } else {
+        console.error('Los datos recibidos no son un array:', data);
+        setServicios([]);
+      }
     } catch (error) {
+      console.error('Error en fetchServicios:', error);
       setMensaje(error.message);
+      setServicios([]);
     }
   };
 
   useEffect(() => {
-    fetchServicios();
+    const inicializarDatos = async () => {
+      try {
+        console.log('Iniciando carga de servicios...');
+        const data = await ServiciosService.getServicios();
+        console.log('Datos recibidos en inicializarDatos:', data);
+        
+        if (!data || data.length === 0) {
+          console.log('No se recibieron datos');
+          setMensaje('No hay servicios disponibles');
+        } else {
+          console.log('Actualizando estado con datos:', data);
+          setServicios(data);
+        }
+      } catch (error) {
+        console.error('Error al inicializar datos:', error);
+        setMensaje('Error al cargar los servicios: ' + error.message);
+      }
+    };
+
+    inicializarDatos();
   }, []);
 
   useEffect(() => {
@@ -48,7 +76,7 @@ const ServiciosCrud = () => {
     setNombre(servicio.nombreServicio);
     setDuracion(servicio.duracionEstimada.toString());
     setDescripcion(servicio.descripcion);
-    setEditingId(servicio.idServicio);
+    setEditingId(servicio.id);
     setFormMode('edit');
     setMostrarFormulario(true);
   };
@@ -89,23 +117,30 @@ const ServiciosCrud = () => {
         descripcion: descripcion
       };
 
-      let responseMessage;
-
+      let response;
       if (editingId) {
-        responseMessage = await ServiciosService.updateServicio(editingId, servicioData);
+        // Si hay un editingId, actualizamos
+        response = await ServiciosService.updateServicio(editingId, servicioData);
       } else {
-        responseMessage = await ServiciosService.createServicio(servicioData);
+        // Si no hay editingId, creamos nuevo con el ID ingresado
+        if (!id) {
+          setMensaje('Por favor ingrese el ID del servicio');
+          return;
+        }
+        servicioData.id = id;
+        response = await ServiciosService.createServicio(servicioData);
       }
 
-      setMensaje(responseMessage);
+      setMensaje(response.mensaje);
       resetForm();
-      fetchServicios();
+      await fetchServicios();
     } catch (error) {
       setMensaje(error.message);
     }
   };
 
   const resetForm = () => {
+    setId('');
     setNombre('');
     setDuracion('');
     setDescripcion('');
@@ -118,6 +153,8 @@ const ServiciosCrud = () => {
     <div className="servicios-crud">
       {mostrarFormulario ? (
         <ServicioForm
+          id={id}
+          setId={setId}
           nombre={nombre}
           duracion={duracion}
           descripcion={descripcion}
@@ -168,10 +205,17 @@ const ServiciosCrud = () => {
       )}
       
       {mensaje && (
-        <div className={`alert ${mensaje.includes('correctamente') ? 'success' : 'error'} ${isHiding ? 'hiding' : ''}`}>
-          {mensaje}
-        </div>
-      )}
+  <div className={`alert ${
+    mensaje.includes('correctamente') || 
+    mensaje.includes('éxito') || 
+    mensaje.includes('Se ha modificado') ||
+    mensaje.includes('Se ha eliminado')
+      ? 'success' 
+      : 'error'
+  } ${isHiding ? 'hiding' : ''}`}>
+    {mensaje}
+  </div>
+)}
     </div>
   );
 };

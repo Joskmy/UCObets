@@ -34,9 +34,9 @@ function TestConexion() {
         <div>
           <h3>Datos recibidos:</h3>
           <ul>
-            {datos.map((item, index) => (
+          {datos.map((item, index) => (
               <li key={index}>
-                {item.nombre} - Duración: {item.duracion}
+                {item.nombreServicio} - Duración: {item.duracionEstimada} min
               </li>
             ))}
           </ul>

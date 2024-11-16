@@ -27,16 +27,15 @@ public final class ServicioEntity {
 	@Column(name = "descripcion")
 	private String descripcion;
 
-	ServicioEntity(){
+	ServicioEntity() {
 		setId(UUIDHelper.getDefault());
 		setNombreServicio(TextHelper.EMPTY);
 		setDuracionEstimada(NumericHelper.ZERO);
 		setDescripcion(TextHelper.EMPTY);
 	}
 
-
-	public ServicioEntity(final UUID id, final String nombreServicio, final
-			int duracionEstimada, final String descripcion) {
+	public ServicioEntity(final UUID id, final String nombreServicio, final int duracionEstimada,
+			final String descripcion) {
 		setId(id);
 		setNombreServicio(nombreServicio);
 		setDuracionEstimada(duracionEstimada);
@@ -47,8 +46,8 @@ public final class ServicioEntity {
 		return new ServicioEntity();
 	}
 
-	public static final ServicioEntity create(final UUID id, final String nombreServicio, final
-			int duracionEstimada, final String descripcion) {
+	public static final ServicioEntity create(final UUID id, final String nombreServicio, final int duracionEstimada,
+			final String descripcion) {
 		return new ServicioEntity(id, nombreServicio, duracionEstimada, descripcion);
 	}
 
@@ -56,57 +55,36 @@ public final class ServicioEntity {
 		return new ServicioEntity(id, TextHelper.EMPTY, NumericHelper.ZERO, TextHelper.EMPTY);
 	}
 
-
 	public UUID getId() {
 		return id;
 	}
-
 
 	public void setId(UUID id) {
 		this.id = UUIDHelper.getDefault(id, UUIDHelper.getDefault());
 	}
 
-
 	public String getNombreServicio() {
 		return nombreServicio;
 	}
-
 
 	public void setNombreServicio(String nombreServicio) {
 		this.nombreServicio = TextHelper.applyTrim(nombreServicio);
 	}
 
-
 	public int getDuracionEstimada() {
 		return duracionEstimada;
 	}
-
 
 	public void setDuracionEstimada(int duracionEstimada) {
 		this.duracionEstimada = duracionEstimada;
 	}
 
-
 	public String getDescripcion() {
 		return descripcion;
 	}
 
-
 	public void setDescripcion(String descripcion) {
 		this.descripcion = TextHelper.applyTrim(descripcion);
 	}
-
-
-	@Override
-	public String toString() {
-		return "ServicioEntity [id=" + id + ", nombreServicio=" + nombreServicio + ", duracionEstimada="
-				+ duracionEstimada + ", descripcion=" + descripcion + "]";
-	}
-
-
-
-
-
-
 
 }
